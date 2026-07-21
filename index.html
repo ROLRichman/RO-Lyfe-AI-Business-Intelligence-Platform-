@@ -5,18 +5,17 @@
 
 <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
 <title>
 RO'Lyfe AI Business Intelligence Platform™
 </title>
 
-<meta name="description"
-content="RO'Lyfe AI Business Intelligence Platform™ - AI underwriting, capital intelligence, real estate automation, investor placement, and robotics integration.">
+<meta name="description" content="RO'Lyfe AI Business Intelligence Platform - Capital Intelligence, Deal Acquisition, AI Underwriting, Investor Placement, Robotics Automation">
 
 <link rel="stylesheet" href="styles.css">
 
-<link rel="icon" href="assets/rolyfe-logo.png">
+<link rel="icon" type="image/png" href="assets/rolyfe-logo.png">
 
 
 <!-- PDF ENGINE -->
@@ -30,9 +29,9 @@ content="RO'Lyfe AI Business Intelligence Platform™ - AI underwriting, capital
 <body>
 
 
-<!-- ==========================
+<!-- =====================================
 LOGIN COMMAND CENTER
-========================== -->
+===================================== -->
 
 
 <div id="loginScreen" class="login-screen">
@@ -41,19 +40,21 @@ LOGIN COMMAND CENTER
 <div class="login-box">
 
 
-<img src="assets/rolyfe-logo.png"
+<img 
+src="assets/rolyfe-logo.png"
 class="login-logo"
 alt="RO'Lyfe Logo">
 
 
 <h1>
-🏦 RO'Lyfe AI Business Intelligence Platform™
+🤖 RO'Lyfe AI Business Intelligence Platform™
 </h1>
 
 
 <p>
-Deal Intelligence • Capital Placement • AI Underwriting • Automation
+Capital Intelligence • AI Underwriting • Robotics • Wealth Systems
 </p>
+
 
 
 <input
@@ -68,13 +69,15 @@ type="password"
 placeholder="Enter Password">
 
 
+
 <button
 class="glow-btn"
 onclick="loginUser()">
 
-🔐 ENTER COMMAND CENTER
+🔐 ENTER PLATFORM
 
 </button>
+
 
 
 <small>
@@ -90,17 +93,27 @@ Rooted in Access. Built for Growth.
 
 </div>
 
+
 </div>
 
 
 
 
-<!-- ==========================
+
+<!-- =====================================
 MAIN APPLICATION
-========================== -->
+===================================== -->
 
 
 <div id="app" class="app hidden">
+
+
+
+
+
+<!-- =====================================
+TOP HEADER
+===================================== -->
 
 
 <header class="top-header">
@@ -109,19 +122,23 @@ MAIN APPLICATION
 <div class="brand">
 
 
-<img src="assets/rolyfe-logo.png"
-class="logo">
+<img
+src="assets/rolyfe-logo.png"
+class="logo"
+alt="RO Lyfe Logo">
+
 
 
 <div>
 
+
 <h1>
-🏦 RO'Lyfe AI Business Intelligence Platform™
+🤖 RO'Lyfe AI Business Intelligence Platform™
 </h1>
 
 
 <p>
-Enterprise Command Center v1.0
+Enterprise Intelligence System v4.0
 </p>
 
 
@@ -129,6 +146,7 @@ Enterprise Command Center v1.0
 
 
 </div>
+
 
 
 
@@ -142,6 +160,7 @@ Enterprise Command Center v1.0
 </button>
 
 
+
 <button onclick="logoutUser()">
 
 Logout
@@ -152,66 +171,177 @@ Logout
 </div>
 
 
+
 </header>
 
 
 
 
 
-<!-- ==========================
-MAIN NAVIGATION
-========================== -->
+
+<!-- =====================================
+COMMAND NAVIGATION
+===================================== -->
 
 
 <nav id="mobileMenu" class="mobile-menu">
 
 
+
 <button onclick="scrollSection('dashboard')">
+
 📊 Command Dashboard
+
 </button>
+
+
 
 
 <button onclick="scrollSection('dealIntake')">
-🚪 Deal Intake Portal
+
+🚪 Deal Intake Engine
+
 </button>
 
 
-<button onclick="scrollSection('property')">
-🏠 Property Intelligence
+
+
+<button onclick="scrollSection('acquisition')">
+
+🔎 Acquisition Engine
+
 </button>
+
+
 
 
 <button onclick="scrollSection('dealWorkspace')">
+
 🏦 Deal Workspace
+
 </button>
+
+
 
 
 <button onclick="scrollSection('notes')">
-📄 NoteForge Analyzer
+
+📄 Note Intelligence
+
 </button>
+
+
+
+
+<button onclick="scrollSection('property')">
+
+🏠 Property Intelligence
+
+</button>
+
+
 
 
 <button onclick="scrollSection('rehab')">
+
 🔨 Rehab Underwriting
+
 </button>
+
+
 
 
 <button onclick="scrollSection('borrower')">
+
 👤 Borrower Intelligence
+
 </button>
+
+
+
+
+<button onclick="scrollSection('trackrecord')">
+
+📚 Track Record
+
+</button>
+
+
+
+
+<button onclick="scrollSection('offers')">
+
+🤝 Creative Offers
+
+</button>
+
+
+
+
+<button onclick="scrollSection('funding')">
+
+🏦 Capital Hub
+
+</button>
+
+
+
+
+<button onclick="scrollSection('investors')">
+
+💰 Investor Engine
+
+</button>
+
+
+
+
+<button onclick="scrollSection('closer')">
+
+🔥 Closers OS
+
+</button>
+
+
+
+
+<button onclick="scrollSection('market')">
+
+📈 Market Terminal
+
+</button>
+
+
 
 
 <button onclick="scrollSection('aiAdvisor')">
-🧠 Jamal AI Advisor
+
+🧠 Jamal AI
+
 </button>
+
+
 
 
 <button onclick="scrollSection('robotics')">
+
 🤖 Robotics Hub
+
 </button>
 
 
+
+
+<button onclick="scrollSection('documents')">
+
+📂 Document Vault
+
+</button>
+
+
+
 </nav>
+
 
 
 
@@ -224,16 +354,16 @@ MAIN NAVIGATION
 
 
 
-<!-- ==========================
-COMMAND DASHBOARD
-========================== -->
+<!-- =====================================
+PORTFOLIO COMMAND DASHBOARD
+===================================== -->
 
 
 <section id="dashboard" class="section">
 
 
 <h2>
-📊 RO'Lyfe Command Dashboard
+📊 RO'Lyfe Intelligence Dashboard
 </h2>
 
 
@@ -241,10 +371,11 @@ COMMAND DASHBOARD
 <div class="dashboard-grid">
 
 
+
 <div class="metric-card">
 
 <h3>
-Deals
+Total Deals
 </h3>
 
 <h2 id="totalDeals">
@@ -255,17 +386,49 @@ Deals
 
 
 
+
 <div class="metric-card">
 
 <h3>
-Portfolio Value
+Total Notes
 </h3>
 
-<h2 id="portfolioValue">
+<h2 id="totalNotes">
+0
+</h2>
+
+</div>
+
+
+
+
+<div class="metric-card">
+
+<h3>
+UPB Balance
+</h3>
+
+<h2 id="totalUPB">
 $0
 </h2>
 
 </div>
+
+
+
+
+<div class="metric-card">
+
+<h3>
+Capital Deployed
+</h3>
+
+<h2 id="capitalDeployed">
+$0
+</h2>
+
+</div>
+
 
 
 
@@ -283,10 +446,41 @@ $0
 
 
 
+
 <div class="metric-card">
 
 <h3>
-Deal Score
+Target Yield
+</h3>
+
+<h2 id="targetYield">
+0%
+</h2>
+
+</div>
+
+
+
+
+<div class="metric-card">
+
+<h3>
+Discount Captured
+</h3>
+
+<h2 id="discountAmount">
+$0
+</h2>
+
+</div>
+
+
+
+
+<div class="metric-card">
+
+<h3>
+RO'Lyfe Deal Score
 </h3>
 
 <h2 id="dealScore">
@@ -296,68 +490,6 @@ Deal Score
 </div>
 
 
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-<!-- ==========================
-DEAL INTAKE
-========================== -->
-
-
-<section id="dealIntake" class="section">
-
-
-<h2>
-🚪 RO'Lyfe Deal Intake Portal
-</h2>
-
-
-<div class="card">
-
-
-<p>
-Capture incoming opportunities, borrowers, investors, and capital requests.
-</p>
-
-
-
-<div class="button-grid">
-
-
-<button class="glow-btn"
-onclick="openDealIntake()">
-
-🏠 Submit Deal
-
-</button>
-
-
-<button class="glow-btn"
-onclick="openInvestorIntake()">
-
-💰 Investor Intake
-
-</button>
-
-
-<button class="glow-btn"
-onclick="openBorrowerIntake()">
-
-🏦 Borrower Application
-
-</button>
-
-
-</div>
-
 
 </div>
 
@@ -368,1172 +500,4 @@ onclick="openBorrowerIntake()">
 
 
 
-
-
-<!-- ==========================
-JAMAL AI
-========================== -->
-
-
-<section id="aiAdvisor" class="section">
-
-
-<h2>
-🧠 Jamal AI Capital Advisor
-</h2>
-
-
-<div class="card">
-
-
-<p>
-AI assistant for underwriting, funding strategy, creative finance, and investment analysis.
-</p>
-
-
-
-<div id="jamalAIContainer">
-
-
-AI Intelligence Layer Loading...
-
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-<!-- ==========================
-PROPERTY INTELLIGENCE
-========================== -->
-
-
-<section id="property" class="section">
-
-
-<h2>
-🏠 Property Intelligence Hub
-</h2>
-
-
-<div class="card">
-
-
-
-<input
-id="propertyAddress"
-placeholder="Property Address">
-
-
-<input
-id="propertyARV"
-placeholder="Estimated ARV">
-
-
-<input
-id="propertyPurchase"
-placeholder="Purchase Price">
-
-
-<input
-id="propertyRehab"
-placeholder="Rehab Budget">
-
-
-
-<button
-class="glow-btn"
-onclick="sendPropertyToDeal()">
-
-🏦 SEND TO DEAL WORKSPACE
-
-</button>
-
-
-
-<div class="button-grid">
-
-
-<button onclick="openZillow()">
-🏠 Zillow
-</button>
-
-
-<button onclick="openRedfin()">
-🏡 Redfin
-</button>
-
-
-<button onclick="openRealtor()">
-🔑 Realtor
-</button>
-
-
-<button onclick="openPropWire()">
-📊 PropWire
-</button>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-<!-- ==========================
-DEAL WORKSPACE
-========================== -->
-
-
-<section id="dealWorkspace" class="section">
-
-
-<h2>
-🏦 RO'Lyfe Deal Workspace
-</h2>
-
-
-<div class="card">
-
-
-<div class="input-grid">
-
-
-<input id="dealAddress"
-placeholder="Property Address">
-
-
-<input id="dealPurchase"
-placeholder="Purchase Price">
-
-
-<input id="dealARV"
-placeholder="ARV">
-
-
-<input id="dealRehab"
-placeholder="Rehab Budget">
-
-
-<input id="dealBorrower"
-placeholder="Borrower Name">
-
-
-</div>
-
-
-
-<button
-class="glow-btn"
-onclick="submitDealIntake()">
-
-🚀 CREATE DEAL
-
-</button>
-
-
-<div id="dealWorkspaceResult"
-class="result-box">
-
-No Active Deal
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-<!-- ==========================
-NOTE ANALYZER
-========================== -->
-
-
-<section id="notes" class="section">
-
-
-<h2>
-📄 Note Acquisition Analyzer
-</h2>
-
-
-<div class="card">
-
-
-<input id="noteUPB"
-placeholder="Current UPB">
-
-
-<input id="notePurchase"
-placeholder="Purchase Price">
-
-
-<input id="noteRate"
-placeholder="Interest Rate">
-
-
-<input id="notePayment"
-placeholder="Monthly Payment">
-
-
-<button
-class="glow-btn"
-onclick="analyzeNote()">
-
-🧠 RUN NOTE ANALYSIS
-
-</button>
-
-
-
-<div id="noteResults"
-class="result-box">
-
-Waiting for analysis...
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-<!-- ==========================
-BORROWER PROFILE
-========================== -->
-
-
-<section id="borrower" class="section">
-
-
-<h2>
-👤 Borrower Intelligence Profile
-</h2>
-
-
-<div class="card">
-
-
-<input id="borrowerName"
-placeholder="Borrower Name">
-
-
-<input id="entityName"
-placeholder="Borrowing Entity">
-
-
-<input id="borrowerEmail"
-placeholder="Email">
-
-
-<input id="borrowerPhone"
-placeholder="Phone">
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-<!-- ==========================
-REHAB UNDERWRITING
-========================== -->
-
-
-<section id="rehab" class="section">
-
-
-<h2>
-🔨 Rehab Underwriting Engine
-</h2>
-
-
-<div class="card">
-
-
-<p>
-Generate lender-ready construction budgets and project analysis.
-</p>
-
-
-<button
-class="glow-btn"
-onclick="loadRehabTemplate()">
-
-📋 LOAD REHAB TEMPLATE
-
-</button>
-
-
-<div id="rehabTemplateContainer">
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-<!-- ==========================
-CREATIVE OFFER ENGINE
-========================== -->
-
-
-<section id="offers" class="section">
-
-
-<h2>
-🏠 Three Tier Creative Offer Engine
-</h2>
-
-
-<div class="card">
-
-
-<div class="input-grid">
-
-
-<input id="offerARV"
-placeholder="Property ARV">
-
-
-<select id="offerType">
-
-<option value="cash">
-💵 Cash Offer
-</option>
-
-<option value="carry">
-🤝 Seller Carry
-</option>
-
-<option value="finance">
-🏦 Seller Financing
-</option>
-
-</select>
-
-
-<input id="downPayment"
-placeholder="Down Payment %">
-
-
-<input id="interestRate"
-placeholder="Interest Rate %">
-
-
-<input id="balloonYears"
-placeholder="Balloon Years">
-
-
-</div>
-
-
-
-<button
-class="glow-btn"
-onclick="calculateCreativeOffer()">
-
-💡 BUILD OFFER STRUCTURE
-
-</button>
-
-
-
-<div id="offerResult"
-class="result-box">
-
-Waiting for offer structure...
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-<!-- ==========================
-AI UNDERWRITING ENGINE
-========================== -->
-
-
-<section id="underwriting" class="section ai-box">
-
-
-<h2>
-🤖 RO'Lyfe AI Underwriting Engine
-</h2>
-
-
-<p>
-AI analyzes purchase price, ARV, LTV, risk, cash flow, and exit strategy.
-</p>
-
-
-<ul>
-
-<li>Purchase vs ARV</li>
-
-<li>LTV Exposure</li>
-
-<li>ROI Potential</li>
-
-<li>Cash Flow Strength</li>
-
-<li>Exit Strategy</li>
-
-<li>Investor Fit</li>
-
-</ul>
-
-
-
-<button
-class="glow-btn"
-onclick="runAIUnderwriter()">
-
-🧠 RUN AI DEAL DECISION
-
-</button>
-
-
-
-<div id="aiDecision"
-class="result-box">
-
-Awaiting underwriting...
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-<!-- ==========================
-ACQUISITION ENGINE
-========================== -->
-
-
-<section id="acquisition" class="section">
-
-
-<h2>
-🔎 RO'Lyfe Acquisition Engine
-</h2>
-
-
-<div class="card">
-
-
-<p>
-Find opportunities, distressed assets, notes, borrowers, and investors.
-</p>
-
-
-
-<div class="button-grid">
-
-
-<button class="glow-btn">
-🏠 Property Leads
-</button>
-
-
-<button class="glow-btn">
-📄 Note Upload
-</button>
-
-
-<button class="glow-btn">
-🤝 Buyer Matching
-</button>
-
-
-<button class="glow-btn">
-📊 Deal Scoring
-</button>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-<!-- ==========================
-CLOSERS OS
-========================== -->
-
-
-<section id="closer" class="section">
-
-
-<h2>
-🔥 RO'Lyfe Closers OS
-</h2>
-
-
-<div class="card">
-
-
-<p>
-Move opportunities from acquisition to closing.
-</p>
-
-
-<div class="button-grid">
-
-
-<button class="glow-btn">
-
-📝 Contract Generator
-
-</button>
-
-
-
-<button class="glow-btn">
-
-💰 Proof Of Funds
-
-</button>
-
-
-
-<button class="glow-btn">
-
-🏦 Lender Submission
-
-</button>
-
-
-
-<button class="glow-btn">
-
-✅ Closing Checklist
-
-</button>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-<!-- ==========================
-MARKET TERMINAL
-========================== -->
-
-
-<section id="market" class="section">
-
-
-<h2>
-📈 RO'Lyfe Market Terminal
-</h2>
-
-
-<div class="card">
-
-
-<p>
-Market intelligence, trading signals, and capital timing.
-</p>
-
-
-
-<div class="button-grid">
-
-
-<button class="glow-btn">
-
-📊 TradingView
-
-</button>
-
-
-<button class="glow-btn">
-
-🔥 Market Scanner
-
-</button>
-
-
-<button class="glow-btn">
-
-⚡ Options Ladder
-
-</button>
-
-
-<button class="glow-btn">
-
-🎯 Alerts
-
-</button>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-<!-- ==========================
-ROBOTICS HUB
-========================== -->
-
-
-<section id="robotics" class="section">
-
-
-<h2>
-🤖 RO'Lyfe AI Robotics Hub
-</h2>
-
-
-<div class="card">
-
-
-<p>
-Future automation layer connecting AI agents, robotics systems, and intelligent business operations.
-</p>
-
-
-
-<div class="button-grid">
-
-
-<button class="glow-btn"
-onclick="openRoboticsDashboard()">
-
-🤖 Robotics Dashboard
-
-</button>
-
-
-<button class="glow-btn">
-
-🧠 AI Agents
-
-</button>
-
-
-<button class="glow-btn">
-
-⚙ Automation
-
-</button>
-
-
-<button class="glow-btn">
-
-🚀 Future Ventures
-
-</button>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-<!-- ==========================
-FUNDING CENTER
-========================== -->
-
-
-<section id="funding" class="section">
-
-
-<h2>
-🏦 Capital & Lending Hub
-</h2>
-
-
-<div class="card">
-
-
-<div class="button-grid">
-
-
-<a href="#" >
-
-<button>
-
-🏦 Hard Money Application
-
-</button>
-
-</a>
-
-
-
-<a href="#">
-
-<button>
-
-💰 Business Funding
-
-</button>
-
-</a>
-
-
-
-<a href="#">
-
-<button>
-
-📈 Investor Portal
-
-</button>
-
-</a>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-<!-- ==========================
-INVESTOR PLACEMENT
-========================== -->
-
-
-<section id="investors" class="section">
-
-
-<h2>
-💰 Investor Placement Engine
-</h2>
-
-
-<div class="card">
-
-
-<p>
-Generate lender and investor packages.
-</p>
-
-
-
-<button
-class="glow-btn"
-onclick="generateLenderPackage()">
-
-📄 GENERATE INVESTOR PACKAGE
-
-</button>
-
-
-
-<div id="packageStatus"
-class="result-box">
-
-Ready
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-<!-- ==========================
-DOCUMENT VAULT
-========================== -->
-
-
-<section id="documents" class="section">
-
-
-<h2>
-📂 RO'Lyfe Document Command Vault
-</h2>
-
-
-<div class="card">
-
-
-<p>
-Central storage for contracts, underwriting files, lender documents, and investor reports.
-</p>
-
-
-
-<div class="button-grid">
-
-
-<button>
-📄 Due Diligence
-</button>
-
-
-<button>
-📊 Investor Reports
-</button>
-
-
-<button>
-🤝 Agreements
-</button>
-
-
-<button>
-🏦 Lending Documents
-</button>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-<!-- ==========================
-SYSTEM CONFIGURATION
-========================== -->
-
-
-<script>
-
-
-const RO_LYFE_CONFIG = {
-
-
-company:
-"Root Of Lyfe Holdings LLC™",
-
-
-brand:
-"RO'Lyfe AI Business Intelligence Platform™",
-
-
-version:
-"Enterprise Command Center v1.0",
-
-
-slogan:
-"Rooted in Access. Built for Growth.",
-
-
-modules:[
-
-
-"Deal Intake",
-
-"AI Underwriter",
-
-"Jamal AI",
-
-"Property Intelligence",
-
-"NoteForge",
-
-"Investor Engine",
-
-"Closers OS",
-
-"Market Terminal",
-
-"Robotics Engine",
-
-"Unitree Integration"
-
-
-]
-
-
-};
-
-
-</script>
-
-
-
-
-
-
-<!-- ==========================
-MODULE LOAD ORDER
-========================== -->
-
-<script src="modules/rolyfe-ai-advisor.js"></script>
-
-<script src="modules/ai-underwriter.js"></script>
-
-<script src="modules/robotics-engine.js"></script>
-
-<script src="script.js"></script>
-
-
-
-
-  
-<script src="modules/deal-intake-engine.js"></script>
-
-<script src="modules/deal-workspace-engine.js"></script>
-
-<script src="modules/property-engine.js"></script>
-
-<script src="modules/borrower-profile-engine.js"></script>
-
-<script src="modules/ai-underwriter.js"></script>
-
-<script src="modules/rolyfe-ai-advisor.js"></script>
-
-<script src="modules/robotics-engine.js"></script>
-
-
-<script src="calculators/note-yield-calculator.js"></script>
-
-<script src="calculators/ltv-calculator.js"></script>
-
-<script src="calculators/rehab-arv-calculator.js"></script>
-
-<script src="calculators/creative-offer-calculator.js"></script>
-
-
-<script src="script.js"></script>
-
-
-
-
-
-
-
-<!-- ==========================
-FOOTER
-========================== -->
-
-
-<footer class="footer">
-
-
-<h3>
-🏦 RO'Lyfe Holdings LLC™
-</h3>
-
-
-<p>
-Rooted in Access. Built for Growth.
-</p>
-
-
-<p>
-AI Intelligence • Capital Placement • Real Estate Systems • Robotics Integration
-</p>
-
-
-<p>
-RO'Lyfe AI Business Intelligence Platform™
-</p>
-
-
-</footer>
-
-
-</main>
-
-
-</div>
-
-
-
-
-
-
-<!-- ==========================
-SESSION CONTROL
-========================== -->
-
-
-<script>
-
-
-document.addEventListener(
-"DOMContentLoaded",
-function(){
-
-
-const session =
-localStorage.getItem(
-"rolyfeLoggedIn"
-);
-
-
-
-if(session === "true"){
-
-
-document
-.getElementById("loginScreen")
-.classList.add("hidden");
-
-
-document
-.getElementById("app")
-.classList.remove("hidden");
-
-
-}
-
-
-});
-
-
-
-
-
-function scrollSection(id){
-
-
-const section =
-document.getElementById(id);
-
-
-if(section){
-
-section.scrollIntoView({
-
-behavior:"smooth"
-
-});
-
-}
-
-
-}
-
-
-
-
-function toggleTheme(){
-
-
-document.body.classList.toggle(
-"light-mode"
-);
-
-
-}
-
-
-
-
-
-</script>
-
-
-</body>
-
-  </html>
-  
+<!-- NEXT PART CONTINUES HERE -->
