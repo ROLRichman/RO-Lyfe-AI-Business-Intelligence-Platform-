@@ -1171,4 +1171,902 @@ onclick="emailRehabBudget()">
 
 <!-- NEXT PART CONTINUES HERE -->
 
+<!-- =====================================
+ROI & COMPOUND WEALTH ENGINE
+===================================== -->
+
+
+<section class="section">
+
+
+<h2>
+📈 ROI & Compound Wealth Engine
+</h2>
+
+
+
+<div class="card">
+
+
+<div class="input-grid">
+
+
+<input
+id="investmentAmount"
+placeholder="Investment Amount">
+
+
+
+<input
+id="monthlyCashflow"
+placeholder="Monthly Cash Flow">
+
+
+
+<input
+id="roiYears"
+placeholder="Investment Years">
+
+
+
+<input
+id="annualGrowth"
+placeholder="Annual Growth %">
+
+
+
+</div>
+
+
+
+
+<button
+
+class="glow-btn"
+
+onclick="calculateCompoundROI()">
+
+🚀 CALCULATE COMPOUND ROI
+
+</button>
+
+
+
+
+<div
+
+id="roiResult"
+
+class="result-box">
+
+No calculation yet.
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+CREATIVE OFFER ENGINE
+===================================== -->
+
+
+<section id="offers" class="section">
+
+
+<h2>
+🤝 Three Tier Creative Offer Engine
+</h2>
+
+
+
+<div class="card">
+
+
+<div class="input-grid">
+
+
+<input
+
+id="offerARV"
+
+placeholder="Property ARV"
+
+value="250000">
+
+
+
+<select id="offerType">
+
+
+<option value="cash">
+
+💵 All Cash Offer
+
+</option>
+
+
+
+<option value="carry">
+
+🤝 Seller Carry
+
+</option>
+
+
+
+<option value="finance">
+
+🏦 Seller Financing
+
+</option>
+
+
+</select>
+
+
+
+
+<input
+id="cashPercent"
+placeholder="Cash Offer % ARV"
+value="50">
+
+
+
+<input
+id="carryPercent"
+placeholder="Seller Carry % ARV"
+value="65">
+
+
+
+<input
+id="financePercent"
+placeholder="Seller Finance % ARV"
+value="75">
+
+
+
+<input
+id="downPayment"
+placeholder="Down Payment %"
+value="5">
+
+
+
+<input
+id="interestRate"
+placeholder="Interest Rate %"
+value="5">
+
+
+
+<input
+id="balloonYears"
+placeholder="Balloon Years"
+value="5">
+
+
+
+<input
+id="amortizationYears"
+placeholder="Amortization Years"
+value="30">
+
+
+
+</div>
+
+
+
+
+<button
+
+class="glow-btn"
+
+onclick="calculateCreativeOffer()">
+
+💡 BUILD OFFER STRUCTURE
+
+</button>
+
+
+
+
+<div
+
+id="offerResult"
+
+class="result-box">
+
+Waiting for offer structure...
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+OVERAGE EXIT STRATEGY ENGINE
+===================================== -->
+
+
+<section class="section">
+
+
+<h2>
+📊 Overage & Exit Strategy Calculator
+</h2>
+
+
+
+<div class="card">
+
+
+<div class="input-grid">
+
+
+<input
+id="salePrice"
+placeholder="Future Sale Price">
+
+
+
+<input
+id="originalDebt"
+placeholder="Original Debt">
+
+
+
+<input
+id="repairCost"
+placeholder="Repair Cost">
+
+
+
+<input
+id="holdingCosts"
+placeholder="Holding Costs">
+
+
+
+<input
+id="sellingCosts"
+placeholder="Selling Costs %">
+
+
+
+</div>
+
+
+
+
+<button
+
+class="glow-btn"
+
+onclick="calculateOverage()">
+
+📈 Calculate Overage
+
+</button>
+
+
+
+
+<div
+
+id="overageResult"
+
+class="result-box">
+
+No calculation yet.
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+REHAB ARV ENGINE
+===================================== -->
+
+
+<section class="section">
+
+
+<h2>
+🔨 Rehab ARV Intelligence Engine
+</h2>
+
+
+
+<div class="card">
+
+
+<div class="input-grid">
+
+
+<input
+id="rehabPurchasePrice"
+placeholder="Purchase Price">
+
+
+
+<input
+id="rehabCost"
+placeholder="Rehab Budget">
+
+
+
+<input
+id="afterRepairValue"
+placeholder="ARV">
+
+
+
+<input
+id="loanAmount"
+placeholder="Loan Amount">
+
+
+
+</div>
+
+
+
+
+<button
+
+class="glow-btn"
+
+onclick="calculateRehabARV()">
+
+🏗 Analyze Project
+
+</button>
+
+
+
+
+<div
+
+id="rehabResult"
+
+class="result-box">
+
+Waiting for analysis...
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+AI UNDERWRITING ENGINE
+===================================== -->
+
+
+<section class="section ai-box">
+
+
+<h2>
+🤖 RO'Lyfe AI Underwriting Engine
+</h2>
+
+
+
+<p>
+AI evaluates:
+</p>
+
+
+
+<ul>
+
+
+<li>
+Purchase Price vs ARV
+</li>
+
+
+<li>
+Loan-to-Value Exposure
+</li>
+
+
+<li>
+Cash Flow Strength
+</li>
+
+
+<li>
+Investor Fit
+</li>
+
+
+<li>
+Exit Strategy
+</li>
+
+
+<li>
+Risk Profile
+</li>
+
+
+</ul>
+
+
+
+
+<button
+
+class="glow-btn"
+
+onclick="runAIUnderwriter()">
+
+🧠 RUN AI DEAL DECISION
+
+</button>
+
+
+
+
+<div
+
+id="aiDecision"
+
+class="result-box">
+
+Awaiting underwriting...
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+PORTFOLIO TABLE
+===================================== -->
+
+
+<section class="section">
+
+
+<h2>
+📚 Portfolio Intelligence Database
+</h2>
+
+
+
+<div class="card">
+
+
+<table>
+
+
+<thead>
+
+
+<tr>
+
+<th>
+ID
+</th>
+
+
+<th>
+Asset
+</th>
+
+
+<th>
+UPB
+</th>
+
+
+<th>
+Yield
+</th>
+
+
+<th>
+Status
+</th>
+
+
+</tr>
+
+
+</thead>
+
+
+
+<tbody id="portfolioTable">
+
+
+</tbody>
+
+
+
+</table>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+ACQUISITION ENGINE
+===================================== -->
+
+
+<section id="acquisition" class="section">
+
+
+<h2>
+🔎 RO'Lyfe Acquisition Engine
+</h2>
+
+
+
+<div class="card">
+
+
+<p>
+
+Find opportunities, distressed assets, notes, borrowers, and investors.
+
+</p>
+
+
+
+<div class="button-grid">
+
+
+<button class="glow-btn">
+
+🏠 Property Leads
+
+</button>
+
+
+
+<button class="glow-btn">
+
+📄 Note Tape Upload
+
+</button>
+
+
+
+<button class="glow-btn">
+
+🤝 Buyer Matching
+
+</button>
+
+
+
+<button class="glow-btn">
+
+📊 Deal Scoring
+
+</button>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+CLOSERS OS
+===================================== -->
+
+
+<section id="closer" class="section">
+
+
+<h2>
+🔥 RO'Lyfe Closers OS
+</h2>
+
+
+
+<div class="card">
+
+
+<p>
+
+Move deals from opportunity → contract → funding → closing.
+
+</p>
+
+
+
+
+<div class="button-grid">
+
+
+<button class="glow-btn">
+
+📝 Contract Generator
+
+</button>
+
+
+
+
+<button class="glow-btn">
+
+💰 Proof Of Funds
+
+</button>
+
+
+
+
+<button class="glow-btn">
+
+🏦 Lender Submission
+
+</button>
+
+
+
+
+<button class="glow-btn">
+
+✅ Closing Checklist
+
+</button>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+MARKET TERMINAL
+===================================== -->
+
+
+<section id="market" class="section">
+
+
+<h2>
+📈 RO'Lyfe Market Terminal
+</h2>
+
+
+
+<div class="card">
+
+
+<p>
+Market intelligence, trading signals, and capital timing.
+</p>
+
+
+
+<div class="button-grid">
+
+
+<button class="glow-btn">
+
+📊 TradingView
+
+</button>
+
+
+
+
+<button class="glow-btn">
+
+🔥 Market Scanner
+
+</button>
+
+
+
+
+<button class="glow-btn">
+
+⚡ Options Ladder
+
+</button>
+
+
+
+
+<button class="glow-btn">
+
+🎯 Alerts
+
+</button>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+AI ROBOTICS HUB
+===================================== -->
+
+
+<section id="robotics" class="section">
+
+
+<h2>
+🤖 RO'Lyfe AI Robotics Hub
+</h2>
+
+
+
+<div class="card">
+
+
+<p>
+
+AI agents, automation systems, robotics partnerships, and future technology ventures.
+
+</p>
+
+
+
+
+<div class="button-grid">
+
+
+<button class="glow-btn">
+
+🧠 AI Agents
+
+</button>
+
+
+
+
+<button class="glow-btn">
+
+🤖 Robotics Systems
+
+</button>
+
+
+
+
+<button class="glow-btn">
+
+⚙ Automation
+
+</button>
+
+
+
+
+<button class="glow-btn">
+
+🚀 Future Ventures
+
+</button>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- NEXT PART CONTINUES HERE -->
+
+
+
   
