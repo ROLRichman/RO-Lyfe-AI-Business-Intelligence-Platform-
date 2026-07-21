@@ -2629,10 +2629,8 @@ MODULE LOAD ORDER
 ===================================== -->
 
 
-<!-- MAIN CORE FIRST -->
-<script src="script.js"></script>
+<!-- MODULES FIRST -->
 
-<!-- MODULES -->
 <script src="modules/deal-intake-engine.js"></script>
 <script src="modules/deal-workspace-engine.js"></script>
 <script src="modules/property-engine.js"></script>
@@ -2641,19 +2639,44 @@ MODULE LOAD ORDER
 <script src="modules/track-record-engine.js"></script>
 <script src="modules/portfolio-engine.js"></script>
 
-
 <!-- AI -->
+
 <script src="modules/rolyfe-ai-advisor.js"></script>
 <script src="modules/ai-underwriter.js"></script>
 
-
 <!-- ROBOTICS -->
+
 <script src="modules/robotics-engine.js"></script>
 
-
 <!-- DOCUMENTS -->
+
 <script src="modules/signature-engine.js"></script>
 <script src="modules/document-engine.js"></script>
+<script src="modules/lender-package-generator.js"></script>
+<script src="modules/email-engine.js"></script>
+<script src="modules/investor-engine.js"></script>
+
+
+<!-- CALCULATORS -->
+
+<script src="calculators/note-yield-calculator.js"></script>
+<script src="calculators/ltv-calculator.js"></script>
+<script src="calculators/discount-calculator.js"></script>
+<script src="calculators/cashflow-calculator.js"></script>
+<script src="calculators/compound-roi-calculator.js"></script>
+<script src="calculators/irr-calculator.js"></script>
+<script src="calculators/overage-calculator.js"></script>
+<script src="calculators/rehab-arv-calculator.js"></script>
+<script src="calculators/deal-score-engine.js"></script>
+<script src="calculators/creative-offer-calculator.js"></script>
+<script src="calculators/seller-carry-calculator.js"></script>
+<script src="calculators/balloon-payment-calculator.js"></script>
+<script src="calculators/payment-calculator.js"></script>
+
+
+<!-- CORE LAST -->
+
+<script src="script.js"></script>
 <script src="modules/lender-package-generator.js"></script>
 <script src="modules/email-engine.js"></script>
 <script src="modules/investor-engine.js"></script>
