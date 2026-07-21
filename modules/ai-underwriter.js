@@ -513,3 +513,17 @@ grade="B";
 }
 
 
+let decision="GO";
+
+if(risk==="HIGH RISK"){
+
+decision="NO GO";
+
+}
+else if(risk==="MODERATE RISK"){
+
+decision="CAUTION";
+
+}
+
+
