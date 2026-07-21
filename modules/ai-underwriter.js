@@ -490,3 +490,26 @@ console.log(
 "🤖 RO'Lyfe AI Underwriter Loaded"
 
 );
+
+
+let grade="A";
+
+if(riskScore>=60){
+
+grade="D";
+
+}
+
+else if(riskScore>=45){
+
+grade="C";
+
+}
+
+else if(riskScore>=25){
+
+grade="B";
+
+}
+
+
