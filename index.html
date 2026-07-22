@@ -2945,6 +2945,289 @@ onclick="generateFundingPackage()">
 </section>
 
 
+
+<!-- =====================================================
+RO'LYFE DOCUMENT COMMAND CENTER
+===================================================== -->
+
+<section id="documents" class="section">
+
+<h2>
+📄 RO'Lyfe Document Vault™
+</h2>
+
+<div class="card">
+
+<p>
+
+Generate, organize, sign, download, email and export all deal documents from one location.
+
+</p>
+
+
+
+
+
+<h3>
+📂 Document Generator
+</h3>
+
+<div class="button-grid">
+
+<button onclick="generateOfferPDF()">
+
+🤝 Purchase Offer
+
+</button>
+
+<button onclick="generateEstimatePDF()">
+
+🏗 Rehab Estimate
+
+</button>
+
+<button onclick="generateFundingPackage()">
+
+🏦 Funding Package
+
+</button>
+
+<button onclick="generateBorrowerProfile()">
+
+👤 Borrower Profile
+
+</button>
+
+<button onclick="generateUnderwritingReport()">
+
+🤖 Underwriting Report
+
+</button>
+
+<button onclick="generateDealSummary()">
+
+📊 Deal Summary
+
+</button>
+
+</div>
+
+
+
+
+
+<hr>
+
+<h3>
+
+📥 Download Center
+
+</h3>
+
+<div class="button-grid">
+
+<button onclick="downloadLoanApplication()">
+
+📄 Pre Loan Application
+
+</button>
+
+<button onclick="downloadOfferLetter()">
+
+🤝 Offer Letter
+
+</button>
+
+<button onclick="downloadRepairEstimate()">
+
+🏗 Contractor Estimate
+
+</button>
+
+<button onclick="downloadChecklist()">
+
+✅ Borrower Checklist
+
+</button>
+
+<button onclick="downloadClosingPackage()">
+
+📦 Closing Package
+
+</button>
+
+</div>
+
+
+
+
+
+<hr>
+
+<h3>
+
+📧 Email & Export
+
+</h3>
+
+<div class="button-grid">
+
+<button onclick="emailFundingPackage()">
+
+📧 Email Package
+
+</button>
+
+<button onclick="exportPDF()">
+
+📄 Export PDF
+
+</button>
+
+<button onclick="exportWord()">
+
+📝 Export DOC
+
+</button>
+
+<button onclick="exportJSON()">
+
+💾 Export Data
+
+</button>
+
+</div>
+
+
+
+
+
+<hr>
+
+<h3>
+
+🖊 Digital Signature Center
+
+</h3>
+
+<p>
+
+Choose a signature option.
+
+</p>
+
+<select id="signatureSelector">
+
+<option>
+
+Select Signature Method
+
+</option>
+
+<option>
+
+Draw Signature
+
+</option>
+
+<option>
+
+Type Signature
+
+</option>
+
+<option>
+
+Upload Signature
+
+</option>
+
+<option>
+
+Request E-Sign
+
+</option>
+
+</select>
+
+<div id="signatureWorkspace">
+
+Signature pad loads here.
+
+</div>
+
+<button
+class="glow-btn"
+onclick="saveSignature()">
+
+🖊 Save Signature
+
+</button>
+
+
+
+
+
+<hr>
+
+<h3>
+
+📂 Upload Documents
+
+</h3>
+
+<input
+type="file"
+multiple
+id="documentUpload">
+
+<div id="uploadedDocuments"
+class="result-box">
+
+No files uploaded.
+
+</div>
+
+
+
+
+
+<hr>
+
+<h3>
+
+🧠 Jamal Document Assistant
+
+</h3>
+
+<div
+id="jamalDocumentExplainer"
+class="result-box">
+
+Jamal explains every document before it is generated.
+
+He also checks:
+
+• Missing signatures
+
+• Missing borrower information
+
+• Required lender documents
+
+• Suggested improvements
+
+• Funding readiness
+
+</div>
+
+</div>
+
+</section>
+  
+  
+
+  
+  
 <!-- =====================================================
 RO'LYFE AI BUSINESS INTELLIGENCE PLATFORM™
 INDEX.HTML PART 1D-1
