@@ -2346,36 +2346,21 @@ Open
 
 
 
-
-
-
 <!-- =====================================================
 BUSINESS FUNDING INTELLIGENCE HUB
 ===================================================== -->
 
-
-<section id="businessFunding"
-
-class="section">
-
-
+<section id="businessFunding" class="section">
 
 <h2>
-
-💼 Business Funding Intelligence Hub
-
+💼 RO'Lyfe Business Funding Intelligence Hub™
 </h2>
-
-
-
 
 <div class="card">
 
-
-
 <p>
 
-Business loan analysis, qualification, calculators, and funding preparation.
+Analyze business financing, compare loan products, calculate payments, prepare lender-ready packages, and receive AI recommendations from Jamal.
 
 </p>
 
@@ -2383,156 +2368,65 @@ Business loan analysis, qualification, calculators, and funding preparation.
 
 
 
+<!-- =========================
+Funding Product Selector
+========================= -->
 
+<label>
+
+<strong>Select Funding Product</strong>
+
+</label>
 
 <select
-
 id="businessLoanSelector"
-
 onchange="loadBusinessFundingProduct()">
 
-
-
 <option value="">
-
-Select Funding Product
-
+Choose Funding Product
 </option>
 
+<option value="term">🏦 Term Loan</option>
 
-<option value="term">
+<option value="sba">🏛 SBA Loan</option>
 
-Term Loan
+<option value="loc">💳 Business Line of Credit</option>
 
-</option>
+<option value="working">💵 Working Capital</option>
 
+<option value="mca">⚡ Merchant Cash Advance</option>
 
-<option value="sba">
+<option value="startup">🚀 Startup Funding</option>
 
-SBA Loan
+<option value="franchise">🏪 Franchise Financing</option>
 
-</option>
+<option value="equipment">⚙ Equipment Financing</option>
 
+<option value="invoice">🧾 Invoice Factoring</option>
 
-<option value="loc">
+<option value="purchase">📦 Purchase Order Financing</option>
 
-Business Line Of Credit
+<option value="asset">🏢 Asset Based Lending</option>
 
-</option>
+<option value="commercial">🏬 Commercial Real Estate</option>
 
+<option value="construction">🏗 Construction Financing</option>
 
-<option value="working">
+<option value="bridge">🌉 Bridge Loan</option>
 
-Working Capital
+<option value="dscr">🏠 DSCR Loan</option>
 
-</option>
+<option value="hardmoney">💰 Hard Money</option>
 
+<option value="credit">📈 Credit Optimization</option>
 
-<option value="mca">
+<option value="equipmentLease">🚜 Equipment Leasing</option>
 
-Merchant Cash Advance
+<option value="revenue">📊 Revenue Based Financing</option>
 
-</option>
+<option value="note">📜 Note Acquisition</option>
 
-
-<option value="startup">
-
-Startup Funding
-
-</option>
-
-
-<option value="franchise">
-
-Franchise Financing
-
-</option>
-
-
-<option value="equipment">
-
-Equipment Financing
-
-</option>
-
-
-<option value="invoice">
-
-Invoice Factoring
-
-</option>
-
-
-<option value="purchase">
-
-Purchase Order Financing
-
-</option>
-
-
-<option value="asset">
-
-Asset Based Lending
-
-</option>
-
-
-<option value="commercial">
-
-Commercial Real Estate Loan
-
-</option>
-
-
-<option value="construction">
-
-Construction Financing
-
-</option>
-
-
-<option value="bridge">
-
-Bridge Loan
-
-</option>
-
-
-<option value="dscr">
-
-DSCR Loan
-
-</option>
-
-
-<option value="hardmoney">
-
-Hard Money
-
-</option>
-
-
-<option value="credit">
-
-Business Credit Optimization
-
-</option>
-
-
-<option value="equipmentLease">
-
-Equipment Leasing
-
-</option>
-
-
-<option value="revenue">
-
-Revenue Based Financing
-
-</option>
-
-
+<option value="fixflip">🏚 Fix & Flip</option>
 
 </select>
 
@@ -2540,38 +2434,91 @@ Revenue Based Financing
 
 
 
+<div
+id="businessFundingExplanation"
+class="result-box">
+
+🧠 Select a funding product.
+
+Jamal will explain:
+
+• Best use case
+
+• Typical borrower
+
+• Qualification requirements
+
+• Documents required
+
+• Estimated funding speed
+
+• Advantages
+
+• Risks
+
+• Suggested lender
+
+</div>
+
+
+
+
+
+<hr>
+
+<h3>
+👤 Borrower Qualification
+</h3>
+
+<div class="input-grid">
+
+<input
+id="businessName"
+placeholder="Business Name">
+
+<input
+id="ownerName"
+placeholder="Owner Name">
+
+<input
+id="fundingRequest"
+placeholder="Funding Amount Requested">
+
+<input
+id="annualRevenue"
+placeholder="Annual Revenue">
+
+<input
+id="timeBusiness"
+placeholder="Years in Business">
+
+<input
+id="estimatedCredit"
+placeholder="Estimated Credit Score">
+
+</div>
+
+
+
+
+
+<button
+class="glow-btn"
+onclick="analyzeBusinessFunding()">
+
+🤖 Analyze Borrower
+
+</button>
+
+
 
 
 
 <div
-
-id="businessFundingExplanation"
-
+id="businessFundingResult"
 class="result-box">
 
-
-Select a funding product to view:
-
-<br><br>
-
-• Qualification requirements
-
-<br>
-
-• Documents needed
-
-<br>
-
-• Best use case
-
-<br>
-
-• Risks
-
-<br>
-
-• Jamal recommendation
-
+Waiting for borrower analysis...
 
 </div>
 
@@ -2579,13 +2526,97 @@ Select a funding product to view:
 
 
 
+<hr>
+
+<h3>
+📂 Required Borrower Documents
+</h3>
+
+<div class="check-grid">
+
+<label><input type="checkbox"> Government ID</label>
+
+<label><input type="checkbox"> EIN Confirmation</label>
+
+<label><input type="checkbox"> Business Formation Documents</label>
+
+<label><input type="checkbox"> 3–12 Months Business Bank Statements</label>
+
+<label><input type="checkbox"> Personal Bank Statements (if required)</label>
+
+<label><input type="checkbox"> Tax Returns</label>
+
+<label><input type="checkbox"> Profit & Loss Statement</label>
+
+<label><input type="checkbox"> Balance Sheet</label>
+
+<label><input type="checkbox"> Credit Authorization</label>
+
+<label><input type="checkbox"> Existing Debt Schedule</label>
 
 </div>
 
+
+
+
+
+<hr>
+
+<h3>
+📦 Funding Package Builder
+</h3>
+
+<div class="button-grid">
+
+<button onclick="generateFundingPackage()">
+📄 Build Funding Package
+</button>
+
+<button onclick="downloadFundingPackage()">
+⬇ Download PDF
+</button>
+
+<button onclick="emailFundingPackage()">
+📧 Email Package
+</button>
+
+<button onclick="exportFundingPackage()">
+📤 Export Package
+</button>
+
+</div>
+
+
+
+
+
+<hr>
+
+<h3>
+🧠 Jamal AI Recommendation
+</h3>
+
+<div
+id="jamalFundingRecommendation"
+class="result-box">
+
+After borrower analysis Jamal will recommend:
+
+✅ Best funding product
+
+✅ Estimated approval strength
+
+✅ Missing documents
+
+✅ Underwriting suggestions
+
+✅ Next steps
+
+</div>
+
+</div>
 
 </section>
-
-
 
 
 
