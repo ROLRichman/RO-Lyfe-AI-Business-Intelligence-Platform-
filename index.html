@@ -1,1 +1,3690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+RO'Lyfe AI Business Intelligence Platform™
+</title>
+
+<meta name="description"
+content="RO'Lyfe AI Business Intelligence Platform - Capital Intelligence, Deal Acquisition, AI Underwriting, Funding, Investor Placement, Automation">
+
+<meta name="theme-color" content="#111827">
+
+<link rel="stylesheet" href="styles.css">
+
+<link rel="stylesheet" href="robotics/robotics.css">
+
+<link rel="icon" type="image/png" href="assets/rolyfe-logo.png">
+
+
+<!-- PDF ENGINE -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+
+<!-- ICONS -->
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+RO'LYFE SYSTEM LOADING SCREEN
+===================================================== -->
+
+
+<div id="loadingScreen">
+
+
+<div class="loading-box">
+
+
+<img src="assets/rolyfe-logo.png"
+class="loading-logo">
+
+
+<h1>
+🤖 RO'Lyfe AI Loading...
+</h1>
+
+
+<p>
+Capital Intelligence • Funding • Underwriting • Automation
+</p>
+
+
+<div class="loader"></div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<!-- =====================================================
+LOGIN COMMAND CENTER
+===================================================== -->
+
+
+<div id="loginScreen"
+class="login-screen hidden">
+
+
+
+<div class="login-card">
+
+
+<img src="assets/rolyfe-logo.png"
+class="login-logo">
+
+
+<h1>
+RO'Lyfe AI Business Intelligence Platform™
+</h1>
+
+
+<p>
+
+Enterprise Capital Operating System
+
+</p>
+
+
+
+<input
+
+id="loginEmail"
+
+type="email"
+
+placeholder="Email Address">
+
+
+
+<input
+
+id="loginPassword"
+
+type="password"
+
+placeholder="Password">
+
+
+
+<button
+
+class="glow-btn"
+
+onclick="loginUser()">
+
+
+🔐 ENTER COMMAND CENTER
+
+
+</button>
+
+
+
+<div class="login-footer">
+
+
+<p>
+
+Root Of Lyfe Holdings LLC™
+
+</p>
+
+
+<p>
+
+Rooted in Access. Built for Growth.
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- =====================================================
+MAIN APPLICATION
+===================================================== -->
+
+
+<div id="app"
+class="app hidden">
+
+
+
+
+
+<!-- =====================================================
+TOP COMMAND HEADER
+===================================================== -->
+
+
+<header class="top-header">
+
+
+
+<div class="brand-area">
+
+
+
+<img
+
+src="assets/rolyfe-logo.png"
+
+class="logo">
+
+
+
+<div>
+
+
+<h1>
+
+🤖 RO'Lyfe AI Business Intelligence Platform™
+
+</h1>
+
+
+
+<p>
+
+Enterprise Intelligence System v5.0
+
+</p>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="header-status">
+
+
+<div class="status-pill">
+
+🟢 AI ONLINE
+
+</div>
+
+
+
+<div class="status-pill">
+
+🏦 CAPITAL READY
+
+</div>
+
+
+
+<div class="status-pill">
+
+🤖 ROBOTICS READY
+
+</div>
+
+
+
+<button
+
+onclick="toggleTheme()">
+
+🌙
+
+</button>
+
+
+
+<button
+
+onclick="logoutUser()">
+
+Logout
+
+</button>
+
+
+</div>
+
+
+
+</header>
+
+
+
+
+
+
+
+
+<!-- =====================================================
+COMMAND NAVIGATION
+===================================================== -->
+
+
+<nav class="command-nav">
+
+
+
+<div class="nav-dropdown">
+
+
+<button>
+
+📊 Intelligence
+
+</button>
+
+
+
+<div class="dropdown-content">
+
+
+<button onclick="scrollSection('dashboard')">
+
+Command Dashboard
+
+</button>
+
+
+<button onclick="scrollSection('dealWorkspace')">
+
+Deal Workspace
+
+</button>
+
+
+<button onclick="scrollSection('aiAdvisor')">
+
+Jamal AI
+
+</button>
+
+
+<button onclick="scrollSection('underwriting')">
+
+AI Underwriting
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="nav-dropdown">
+
+
+<button>
+
+🏠 Real Estate
+
+</button>
+
+
+<div class="dropdown-content">
+
+
+<button onclick="scrollSection('property')">
+
+Property Intelligence
+
+</button>
+
+
+<button onclick="scrollSection('acquisition')">
+
+Acquisition Engine
+
+</button>
+
+
+<button onclick="scrollSection('rehab')">
+
+Rehab Analyzer
+
+</button>
+
+
+<button onclick="scrollSection('offers')">
+
+Creative Offers
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="nav-dropdown">
+
+
+<button>
+
+🏦 Funding
+
+</button>
+
+
+
+<div class="dropdown-content">
+
+
+<button onclick="scrollSection('funding')">
+
+Capital Hub
+
+</button>
+
+
+<button onclick="scrollSection('businessFunding')">
+
+Business Funding
+
+</button>
+
+
+<button onclick="scrollSection('loanCenter')">
+
+Loan Applications
+
+</button>
+
+
+<button onclick="scrollSection('borrower')">
+
+Borrower Profile
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="nav-dropdown">
+
+
+<button>
+
+📄 Documents
+
+</button>
+
+
+<div class="dropdown-content">
+
+
+<button onclick="scrollSection('documents')">
+
+Document Vault
+
+</button>
+
+
+<button onclick="scrollSection('signature')">
+
+Signature Center
+
+</button>
+
+
+<button onclick="scrollSection('reports')">
+
+Reports
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="nav-dropdown">
+
+
+<button>
+
+🤖 Future Tech
+
+</button>
+
+
+<div class="dropdown-content">
+
+
+<button onclick="scrollSection('robotics')">
+
+Robotics Hub
+
+</button>
+
+
+<button onclick="scrollSection('automation')">
+
+Automation Engine
+
+</button>
+
+
+<button onclick="scrollSection('memory')">
+
+AI Memory Brain
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+
+</nav>
+
+
+
+
+
+
+
+
+
+<!-- =====================================================
+MAIN CONTAINER
+===================================================== -->
+
+
+<main class="container">
+
+
+
+
+
+
+
+
+<!-- =====================================================
+COMMAND DASHBOARD
+===================================================== -->
+
+
+<section id="dashboard"
+class="section">
+
+
+
+<h2>
+
+📊 RO'Lyfe Intelligence Dashboard
+
+</h2>
+
+
+
+
+
+<div class="dashboard-grid">
+
+
+
+<div class="metric-card">
+
+
+<h3>
+
+Active Deals
+
+</h3>
+
+
+<h1 id="totalDeals">
+
+0
+
+</h1>
+
+
+</div>
+
+
+
+
+
+<div class="metric-card">
+
+
+<h3>
+
+Borrowers
+
+</h3>
+
+
+<h1 id="totalBorrowers">
+
+0
+
+</h1>
+
+
+</div>
+
+
+
+
+
+<div class="metric-card">
+
+
+<h3>
+
+Funding Requests
+
+</h3>
+
+
+<h1 id="fundingRequests">
+
+0
+
+</h1>
+
+
+</div>
+
+
+
+
+
+<div class="metric-card">
+
+
+<h3>
+
+Notes Under Review
+
+</h3>
+
+
+<h1 id="totalNotes">
+
+0
+
+</h1>
+
+
+</div>
+
+
+
+
+
+<div class="metric-card">
+
+
+<h3>
+
+Capital Pipeline
+
+</h3>
+
+
+<h1 id="capitalPipeline">
+
+$0
+
+</h1>
+
+
+</div>
+
+
+
+
+
+<div class="metric-card">
+
+
+<h3>
+
+AI Deal Score
+
+</h3>
+
+
+<h1 id="dealScore">
+
+--
+
+</h1>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<div class="dashboard-panel">
+
+
+
+<h3>
+
+🧠 Jamal System Status
+
+</h3>
+
+
+<div id="jamalStatus">
+
+
+Analyzing opportunities...
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="dashboard-panel">
+
+
+
+<h3>
+
+🤖 Robotics Intelligence
+
+</h3>
+
+
+
+<div id="robotStatus">
+
+
+Robotics memory system initializing...
+
+</div>
+
+
+
+</div>
+
+
+
+
+</section>
+
+
+
+<!-- =====================================================
+QUICK ACTION COMMAND PANEL
+===================================================== -->
+
+
+<section class="section">
+
+
+<h2>
+
+⚡ Quick Command Actions
+
+</h2>
+
+
+
+<div class="action-grid">
+
+
+
+<button
+
+class="action-card"
+
+onclick="openDealIntake()">
+
+
+🏠
+
+<h3>
+New Deal Intake
+</h3>
+
+
+<p>
+Capture property, borrower, and acquisition opportunities.
+</p>
+
+
+</button>
+
+
+
+
+
+
+
+<button
+
+class="action-card"
+
+onclick="openBorrowerProfile()">
+
+
+👤
+
+<h3>
+Borrower Profile
+</h3>
+
+
+<p>
+Build lender-ready borrower intelligence packages.
+</p>
+
+
+</button>
+
+
+
+
+
+
+
+
+<button
+
+class="action-card"
+
+onclick="openFundingCenter()">
+
+
+🏦
+
+<h3>
+Funding Center
+</h3>
+
+
+<p>
+Match opportunities with capital solutions.
+</p>
+
+
+</button>
+
+
+
+
+
+
+
+
+<button
+
+class="action-card"
+
+onclick="openOfferEngine()">
+
+
+🤝
+
+<h3>
+Creative Offers
+</h3>
+
+
+<p>
+Cash, seller carry, and seller finance structures.
+</p>
+
+
+</button>
+
+
+
+
+
+
+
+
+<button
+
+class="action-card"
+
+onclick="openDocuments()">
+
+
+📄
+
+<h3>
+Document Vault
+</h3>
+
+
+<p>
+Generate reports, agreements, and packages.
+</p>
+
+
+</button>
+
+
+
+
+
+
+
+
+<button
+
+class="action-card"
+
+onclick="openJamal()">
+
+
+🧠
+
+<h3>
+Ask Jamal AI
+</h3>
+
+
+<p>
+Get deal explanations and strategy guidance.
+</p>
+
+
+</button>
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================================
+DEAL PIPELINE COMMAND CENTER
+===================================================== -->
+
+
+<section id="dealPipeline"
+class="section">
+
+
+<h2>
+
+🚀 Deal Pipeline Management
+
+</h2>
+
+
+
+
+<div class="pipeline-grid">
+
+
+
+<div class="pipeline-card">
+
+<h3>
+Incoming
+</h3>
+
+
+<span id="incomingDeals">
+
+0
+
+</span>
+
+</div>
+
+
+
+
+
+<div class="pipeline-card">
+
+<h3>
+Analyzing
+</h3>
+
+
+<span id="analyzingDeals">
+
+0
+
+</span>
+
+</div>
+
+
+
+
+
+<div class="pipeline-card">
+
+<h3>
+Funding Review
+</h3>
+
+
+<span id="fundingDeals">
+
+0
+
+</span>
+
+</div>
+
+
+
+
+
+<div class="pipeline-card">
+
+<h3>
+Closing
+
+</h3>
+
+
+<span id="closingDeals">
+
+0
+
+</span>
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================================
+DEAL INTAKE ENGINE FRAMEWORK
+===================================================== -->
+
+
+<section id="dealIntake"
+class="section">
+
+
+<h2>
+
+🚪 Deal Intake Engine
+
+</h2>
+
+
+
+
+<div class="card">
+
+
+
+<p>
+
+Capture acquisitions, borrowers, investors, contractors, and funding opportunities.
+
+</p>
+
+
+
+
+
+<div class="input-grid">
+
+
+
+<input
+
+id="intakeAddress"
+
+placeholder="Property Address">
+
+
+
+
+
+<input
+
+id="intakePurchase"
+
+placeholder="Purchase Price">
+
+
+
+
+
+<input
+
+id="intakeARV"
+
+placeholder="After Repair Value">
+
+
+
+
+
+<input
+
+id="intakeRehab"
+
+placeholder="Rehab Budget">
+
+
+
+
+
+<input
+
+id="intakeBorrower"
+
+placeholder="Borrower Name">
+
+
+
+
+
+<select id="dealType">
+
+
+<option>
+
+Fix & Flip
+
+</option>
+
+
+<option>
+
+BRRRR
+
+</option>
+
+
+<option>
+
+Rental / DSCR
+
+</option>
+
+
+<option>
+
+Commercial
+
+</option>
+
+
+<option>
+
+Mixed Use
+
+</option>
+
+
+<option>
+
+Note Acquisition
+
+</option>
+
+
+</select>
+
+
+
+
+</div>
+
+
+
+
+
+
+<button
+
+class="glow-btn"
+
+onclick="submitDealIntake()">
+
+
+🚀 SEND TO UNDERWRITING
+
+
+</button>
+
+
+
+
+
+
+<div
+
+id="dealIntakeResult"
+
+class="result-box">
+
+
+Waiting for deal...
+
+
+</div>
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================================
+PROPERTY INTELLIGENCE HUB
+===================================================== -->
+
+
+<section id="property"
+
+class="section">
+
+
+
+<h2>
+
+🏠 Property Intelligence Center
+
+</h2>
+
+
+
+
+
+<div class="card">
+
+
+
+<div class="input-grid">
+
+
+
+<input
+
+id="propertyAddress"
+
+placeholder="Property Address">
+
+
+
+<input
+
+id="propertyOwner"
+
+placeholder="Owner Name">
+
+
+
+<input
+
+id="propertyARV"
+
+placeholder="Estimated ARV">
+
+
+
+<input
+
+id="propertyEquity"
+
+placeholder="Estimated Equity">
+
+
+
+<input
+
+id="propertyPurchase"
+
+placeholder="Target Purchase Price">
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="button-grid">
+
+
+
+<button
+
+onclick="openPropertyLink('zillow')">
+
+
+🏠 Zillow
+
+
+</button>
+
+
+
+
+
+<button
+
+onclick="openPropertyLink('redfin')">
+
+
+🏡 Redfin
+
+
+</button>
+
+
+
+
+
+<button
+
+onclick="openPropertyLink('realtor')">
+
+
+🔑 Realtor
+
+
+</button>
+
+
+
+
+
+<button
+
+onclick="openPropertyLink('opa')">
+
+
+🏛 Philadelphia OPA
+
+
+</button>
+
+
+
+
+
+<button
+
+onclick="openPropertyLink('checker')">
+
+
+📊 Property Checker
+
+
+</button>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<div id="propertyResearchFrame"
+
+class="embed-container">
+
+
+<p>
+
+Select a research tool to load inside RO'Lyfe.
+
+</p>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================================
+EMBEDDED TOOL CENTER
+===================================================== -->
+
+
+<section id="toolCenter"
+
+class="section">
+
+
+
+<h2>
+
+🌐 RO'Lyfe Embedded Intelligence Tools
+
+</h2>
+
+
+
+
+<div class="card">
+
+
+
+<p>
+
+Keep users inside the platform while researching properties, funding, and resources.
+
+</p>
+
+
+
+
+
+<select
+
+id="toolSelector"
+
+onchange="loadEmbeddedTool()">
+
+
+
+<option value="">
+
+Select Tool
+
+</option>
+
+
+
+<option value="machine">
+
+RO'Lyfe Machine
+
+</option>
+
+
+
+<option value="acquisition">
+
+Acquisition Engine
+
+</option>
+
+
+
+<option value="overage">
+
+Overage Calculator
+
+</option>
+
+
+
+<option value="funding">
+
+Funding Portal
+
+</option>
+
+
+
+<option value="jotform">
+
+Loan Application
+
+</option>
+
+
+
+</select>
+
+
+
+
+
+
+
+
+<div
+
+id="embeddedToolWindow"
+
+class="embed-window">
+
+
+
+Waiting for tool selection...
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================================
+JAMAL AI FLOATING ASSISTANT
+===================================================== -->
+
+
+<div
+
+id="jamalAssistant"
+
+class="jamal-popup hidden">
+
+
+
+<div class="jamal-header">
+
+
+<h3>
+
+🧠 Jamal AI
+
+</h3>
+
+
+
+<button
+
+onclick="closeJamal()">
+
+X
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+<div class="jamal-body">
+
+
+
+<p id="jamalMessage">
+
+
+Hello, I'm Jamal.
+
+I analyze deals, funding structures, underwriting, and execution strategies.
+
+</p>
+
+
+
+<textarea
+
+id="jamalQuestion"
+
+placeholder="Ask Jamal about this deal...">
+
+
+</textarea>
+
+
+
+
+
+
+<button
+
+class="glow-btn"
+
+onclick="askJamal()">
+
+
+
+🤖 Analyze
+
+
+</button>
+
+
+
+
+
+<div
+
+id="jamalResponse"
+
+class="result-box">
+
+
+Ready...
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!-- =====================================================
+AI UNDERWRITING PREVIEW
+===================================================== -->
+
+
+<section id="underwriting"
+
+class="section">
+
+
+
+<h2>
+
+🤖 RO'Lyfe AI Underwriting Engine
+
+</h2>
+
+
+
+
+<div class="card">
+
+
+
+<p>
+
+Analyze purchase price, ARV, leverage, risk, exit strategy, and lender fit.
+
+</p>
+
+
+
+
+
+<div class="input-grid">
+
+
+<input
+
+id="underPurchase"
+
+placeholder="Purchase Price">
+
+
+<input
+
+id="underARV"
+
+placeholder="ARV">
+
+
+<input
+
+id="underRehab"
+
+placeholder="Rehab">
+
+
+<input
+
+id="underLoan"
+
+placeholder="Loan Amount">
+
+
+
+</div>
+
+
+
+
+
+
+
+<button
+
+class="glow-btn"
+
+onclick="runAIUnderwriter()">
+
+
+
+🧠 RUN AI ANALYSIS
+
+
+
+</button>
+
+
+
+
+
+
+<div
+
+id="aiDecision"
+
+class="result-box">
+
+
+Awaiting underwriting...
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+RO'LYFE CREATIVE OFFER COMMAND CENTER
+===================================================== -->
+
+
+<section id="offers"
+class="section">
+
+
+<h2>
+
+🤝 RO'Lyfe Three Tier Offer Engine™
+
+</h2>
+
+
+
+<div class="card">
+
+
+
+<p>
+
+Structure acquisitions using cash, seller carry, or seller financing strategies.
+
+Jamal analyzes the best execution path.
+
+</p>
+
+
+
+
+
+<div class="input-grid">
+
+
+
+<input
+
+id="offerARV"
+
+placeholder="Property ARV"
+
+value="250000">
+
+
+
+
+
+<input
+
+id="offerRepairs"
+
+placeholder="Estimated Repairs"
+
+value="0">
+
+
+
+
+
+<input
+
+id="offerHolding"
+
+placeholder="Holding Costs"
+
+value="0">
+
+
+
+
+
+<input
+
+id="offerProfit"
+
+placeholder="Desired Profit"
+
+value="0">
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<h3>
+
+Tier 1 — All Cash Offer
+
+</h3>
+
+
+
+<div class="input-grid">
+
+
+
+<input
+
+id="cashOfferPercent"
+
+placeholder="% ARV"
+
+value="50">
+
+
+
+</div>
+
+
+
+
+
+
+
+<h3>
+
+Tier 2 — Seller Carry Offer
+
+</h3>
+
+
+
+<div class="input-grid">
+
+
+
+<input
+
+id="sellerCarryPercent"
+
+placeholder="Seller Carry % ARV"
+
+value="65">
+
+
+
+<input
+
+id="carryDownPayment"
+
+placeholder="Down Payment %"
+
+value="5">
+
+
+
+<input
+
+id="carryInterest"
+
+placeholder="Interest Rate"
+
+value="5">
+
+
+
+<input
+
+id="carryTerm"
+
+placeholder="Amortization Years"
+
+value="30">
+
+
+
+<input
+
+id="carryBalloon"
+
+placeholder="Balloon Years"
+
+value="4">
+
+
+
+</div>
+
+
+
+
+
+
+
+<h3>
+
+Tier 3 — Seller Financing Offer
+
+</h3>
+
+
+
+<div class="input-grid">
+
+
+
+<input
+
+id="sellerFinancePercent"
+
+placeholder="Seller Finance % ARV"
+
+value="75">
+
+
+
+<input
+
+id="financeDownPayment"
+
+placeholder="Down Payment %"
+
+value="0">
+
+
+
+<input
+
+id="financeInterest"
+
+placeholder="Interest Rate"
+
+value="6">
+
+
+
+<input
+
+id="financeBalloon"
+
+placeholder="Balloon Years"
+
+value="5">
+
+
+
+</div>
+
+
+
+
+
+
+
+<button
+
+class="glow-btn"
+
+onclick="calculateCreativeOffer()">
+
+
+
+💡 BUILD OFFER STRUCTURE
+
+
+
+</button>
+
+
+
+
+
+
+<div
+
+id="offerResult"
+
+class="result-box">
+
+
+Waiting for offer analysis...
+
+
+</div>
+
+
+
+
+
+
+
+<button
+
+onclick="askJamalAboutOffer()">
+
+
+
+🧠 Ask Jamal Strategy Recommendation
+
+
+</button>
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================================
+LOAN EXECUTION CENTER
+===================================================== -->
+
+
+<section id="loanExecution"
+
+class="section">
+
+
+
+<h2>
+
+🏦 Loan Execution Center
+
+</h2>
+
+
+
+
+
+<div class="card">
+
+
+<p>
+
+Move from offer structure → financing → closing.
+
+</p>
+
+
+
+
+
+<div class="execution-grid">
+
+
+
+
+
+<div class="execution-card">
+
+
+<h3>
+
+Step 1
+
+</h3>
+
+
+<p>
+
+Borrower Qualification
+
+</p>
+
+
+<button onclick="openBorrowerProfile()">
+
+Open
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="execution-card">
+
+
+<h3>
+
+Step 2
+
+</h3>
+
+
+<p>
+
+Capital Matching
+
+</p>
+
+
+<button onclick="openFundingCenter()">
+
+Open
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="execution-card">
+
+
+<h3>
+
+Step 3
+
+</h3>
+
+
+<p>
+
+Underwriting Review
+
+</p>
+
+
+<button onclick="scrollSection('underwriting')">
+
+Open
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="execution-card">
+
+
+<h3>
+
+Step 4
+
+</h3>
+
+
+<p>
+
+Closing Package
+
+</p>
+
+
+<button onclick="openDocuments()">
+
+Open
+
+</button>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================================
+BUSINESS FUNDING INTELLIGENCE HUB
+===================================================== -->
+
+
+<section id="businessFunding"
+
+class="section">
+
+
+
+<h2>
+
+💼 Business Funding Intelligence Hub
+
+</h2>
+
+
+
+
+<div class="card">
+
+
+
+<p>
+
+Business loan analysis, qualification, calculators, and funding preparation.
+
+</p>
+
+
+
+
+
+
+
+<select
+
+id="businessLoanSelector"
+
+onchange="loadBusinessFundingProduct()">
+
+
+
+<option value="">
+
+Select Funding Product
+
+</option>
+
+
+<option value="term">
+
+Term Loan
+
+</option>
+
+
+<option value="sba">
+
+SBA Loan
+
+</option>
+
+
+<option value="loc">
+
+Business Line Of Credit
+
+</option>
+
+
+<option value="working">
+
+Working Capital
+
+</option>
+
+
+<option value="mca">
+
+Merchant Cash Advance
+
+</option>
+
+
+<option value="startup">
+
+Startup Funding
+
+</option>
+
+
+<option value="franchise">
+
+Franchise Financing
+
+</option>
+
+
+<option value="equipment">
+
+Equipment Financing
+
+</option>
+
+
+<option value="invoice">
+
+Invoice Factoring
+
+</option>
+
+
+<option value="purchase">
+
+Purchase Order Financing
+
+</option>
+
+
+<option value="asset">
+
+Asset Based Lending
+
+</option>
+
+
+<option value="commercial">
+
+Commercial Real Estate Loan
+
+</option>
+
+
+<option value="construction">
+
+Construction Financing
+
+</option>
+
+
+<option value="bridge">
+
+Bridge Loan
+
+</option>
+
+
+<option value="dscr">
+
+DSCR Loan
+
+</option>
+
+
+<option value="hardmoney">
+
+Hard Money
+
+</option>
+
+
+<option value="credit">
+
+Business Credit Optimization
+
+</option>
+
+
+<option value="equipmentLease">
+
+Equipment Leasing
+
+</option>
+
+
+<option value="revenue">
+
+Revenue Based Financing
+
+</option>
+
+
+
+</select>
+
+
+
+
+
+
+
+
+<div
+
+id="businessFundingExplanation"
+
+class="result-box">
+
+
+Select a funding product to view:
+
+<br><br>
+
+• Qualification requirements
+
+<br>
+
+• Documents needed
+
+<br>
+
+• Best use case
+
+<br>
+
+• Risks
+
+<br>
+
+• Jamal recommendation
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================================
+FUNDING APPLICATION CENTER
+===================================================== -->
+
+
+<section id="loanCenter"
+
+class="section">
+
+
+
+<h2>
+
+🏦 Funding Application Center
+
+</h2>
+
+
+
+
+<div class="card">
+
+
+
+<div class="button-grid">
+
+
+
+
+
+<a href="https://form.jotform.com/261416399941062"
+
+target="_blank">
+
+
+<button>
+
+
+🏗 COGO Loan Application
+
+
+</button>
+
+
+</a>
+
+
+
+
+
+
+
+<a href="https://www.borrowersviewcentral.com/portal/applynew?id=LCS"
+
+target="_blank">
+
+
+<button>
+
+
+💰 Hard Money / DSCR
+
+
+</button>
+
+
+</a>
+
+
+
+
+
+
+
+<a href="https://rootoflyfe.blnsoftware.com/"
+
+target="_blank">
+
+
+<button>
+
+
+🧠 RO'Lyfe Underwriting Portal
+
+
+</button>
+
+
+</a>
+
+
+
+
+
+
+
+<a href="https://www.nationalcorporatecredit.com/real-estate/?id=1820217000190862001"
+
+target="_blank">
+
+
+<button>
+
+
+🏢 Business Funding
+
+
+</button>
+
+
+</a>
+
+
+
+
+
+
+<a href="https://portal.asapcreditrepairusa.com/self-signup/RichardsonLegagneur28158"
+
+target="_blank">
+
+
+<button>
+
+
+📈 Credit Optimization
+
+
+</button>
+
+
+</a>
+
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =====================================================
+BORROWER DOCUMENT CHECKLIST PREVIEW
+===================================================== -->
+
+
+<section id="borrowerDocuments"
+
+class="section">
+
+
+<h2>
+
+📂 Borrower Document Intelligence
+
+</h2>
+
+
+
+
+<div class="card">
+
+
+
+<div class="check-grid">
+
+
+
+<label>
+
+<input type="checkbox">
+
+Driver License / ID
+
+</label>
+
+
+
+
+<label>
+
+<input type="checkbox">
+
+Business Formation Documents
+
+</label>
+
+
+
+
+<label>
+
+<input type="checkbox">
+
+EIN Verification
+
+</label>
+
+
+
+
+<label>
+
+<input type="checkbox">
+
+3-12 Months Bank Statements
+
+</label>
+
+
+
+
+<label>
+
+<input type="checkbox">
+
+Tax Returns
+
+</label>
+
+
+
+
+<label>
+
+<input type="checkbox">
+
+Profit & Loss Statement
+
+</label>
+
+
+
+
+<label>
+
+<input type="checkbox">
+
+Balance Sheet
+
+</label>
+
+
+
+
+<label>
+
+<input type="checkbox">
+
+Credit Report
+
+</label>
+
+
+
+
+<label>
+
+<input type="checkbox">
+
+Asset Verification
+
+</label>
+
+
+
+
+<label>
+
+<input type="checkbox">
+
+Property Documents
+
+</label>
+
+
+
+
+</div>
+
+
+
+
+
+<button
+
+class="glow-btn"
+
+onclick="generateFundingPackage()">
+
+
+
+📄 Generate Funding Package
+
+
+
+</button>
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+<!-- =====================================================
+RO'LYFE AI BUSINESS INTELLIGENCE PLATFORM™
+INDEX.HTML PART 1D-1
+
+COMMAND DASHBOARD EXTENSION
+FUNDING INTELLIGENCE CENTER
+JAMAL EXPLAINER FRAMEWORK
+
+Rooted in Access. Built for Growth.
+===================================================== -->
+
+
+<!-- =====================================
+CAPITAL INTELLIGENCE DASHBOARD
+===================================== -->
+
+<section id="capitalDashboard" class="section">
+
+
+<h2>
+🏦 RO'Lyfe Capital Intelligence Dashboard
+</h2>
+
+
+<div class="dashboard-grid">
+
+
+<div class="metric-card">
+
+<h3>
+Active Funding Requests
+</h3>
+
+<h2 id="activeFundingRequests">
+0
+</h2>
+
+</div>
+
+
+
+<div class="metric-card">
+
+<h3>
+Borrower Profiles
+</h3>
+
+<h2 id="borrowerCount">
+0
+</h2>
+
+</div>
+
+
+
+<div class="metric-card">
+
+<h3>
+Investor Matches
+</h3>
+
+<h2 id="investorMatches">
+0
+</h2>
+
+</div>
+
+
+
+<div class="metric-card">
+
+<h3>
+Loan Packages Generated
+</h3>
+
+<h2 id="loanPackages">
+0
+</h2>
+
+</div>
+
+
+
+<div class="metric-card">
+
+<h3>
+Documents Completed
+</h3>
+
+<h2 id="documentsCompleted">
+0
+</h2>
+
+</div>
+
+
+
+<div class="metric-card">
+
+<h3>
+AI Deal Grade
+</h3>
+
+<h2 id="aiDealGrade">
+--
+</h2>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- =====================================
+JAMAL AI EXPLAINER CENTER
+===================================== -->
+
+
+<section id="jamalExplainer" class="section">
+
+
+<h2>
+🧠 Jamal AI Deal & Funding Explainer
+</h2>
+
+
+
+<div class="card">
+
+
+<p>
+
+Jamal explains funding products, calculators, underwriting decisions,
+and borrower requirements.
+
+</p>
+
+
+
+<select id="jamalTopicSelector"
+onchange="jamalExplain(this.value)">
+
+
+<option value="">
+Choose Explanation
+</option>
+
+
+<option value="termloan">
+Term Loan Explained
+</option>
+
+
+<option value="sba">
+SBA Loan Explained
+</option>
+
+
+<option value="mca">
+Merchant Cash Advance Explained
+</option>
+
+
+<option value="linecredit">
+Business Line Of Credit Explained
+</option>
+
+
+<option value="dscr">
+DSCR Real Estate Loan Explained
+</option>
+
+
+<option value="sellerfinance">
+Seller Financing Explained
+</option>
+
+
+<option value="rehab">
+Fix & Flip Funding Explained
+</option>
+
+
+<option value="credit">
+Credit Optimization Explained
+</option>
+
+
+</select>
+
+
+
+<div id="jamalExplanationBox"
+class="result-box">
+
+
+🤖 Select a funding topic and Jamal will explain.
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- =====================================
+BUSINESS FUNDING PRODUCT CENTER
+===================================== -->
+
+
+<section id="businessFunding"
+class="section">
+
+
+<h2>
+💼 Business Funding Intelligence Center
+</h2>
+
+
+
+<div class="card">
+
+
+<p>
+
+Select a funding product. Jamal will explain requirements,
+documents needed, and estimated fit.
+
+</p>
+
+
+
+<div class="button-grid">
+
+
+<button
+onclick="openFundingCalculator('termloan')">
+
+🏦 Term Loan
+
+</button>
+
+
+
+<button
+onclick="openFundingCalculator('sba')">
+
+🏛 SBA Loan
+
+</button>
+
+
+
+<button
+onclick="openFundingCalculator('mca')">
+
+💳 Merchant Cash Advance
+
+</button>
+
+
+
+<button
+onclick="openFundingCalculator('loc')">
+
+💰 Line Of Credit
+
+</button>
+
+
+
+<button
+onclick="openFundingCalculator('workingcapital')">
+
+📈 Working Capital
+
+</button>
+
+
+
+<button
+onclick="openFundingCalculator('startup')">
+
+🚀 Startup Funding
+
+</button>
+
+
+
+<button
+onclick="openFundingCalculator('franchise')">
+
+🏪 Franchise Funding
+
+</button>
+
+
+
+<button
+onclick="openFundingCalculator('equipment')">
+
+⚙ Equipment Financing
+
+</button>
+
+
+</div>
+
+
+
+<div id="fundingCalculatorWorkspace"
+class="card">
+
+
+<h3>
+
+Select A Funding Calculator
+
+</h3>
+
+
+<p>
+
+Calculator results, lender fit,
+estimated payment, and document checklist
+will appear here.
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+BORROWER DOCUMENT READINESS CENTER
+===================================== -->
+
+
+<section id="borrowerDocuments"
+class="section">
+
+
+<h2>
+📂 Borrower Document Readiness Center
+</h2>
+
+
+
+<div class="card">
+
+
+<p>
+
+Jamal prepares borrowers before lender submission.
+
+</p>
+
+
+
+<div class="document-grid">
+
+
+<label>
+
+Business Name
+
+<input
+id="borrowerBusinessName"
+placeholder="Company Name">
+
+</label>
+
+
+
+<label>
+
+Borrower Name
+
+<input
+id="borrowerFullName"
+placeholder="Full Legal Name">
+
+</label>
+
+
+
+<label>
+
+Email
+
+<input
+id="borrowerEmailInput"
+placeholder="Email Address">
+
+</label>
+
+
+
+<label>
+
+Phone
+
+<input
+id="borrowerPhoneInput"
+placeholder="Phone Number">
+
+</label>
+
+
+
+<label>
+
+Years In Business
+
+<select id="yearsBusiness">
+
+
+<option>
+Startup
+</option>
+
+
+<option>
+3-6 Months
+</option>
+
+
+<option>
+6-12 Months
+</option>
+
+
+<option>
+1-3 Years
+</option>
+
+
+<option>
+3+ Years
+</option>
+
+
+</select>
+
+
+</label>
+
+
+
+<label>
+
+Credit Range
+
+<select id="creditRange">
+
+
+<option>
+Excellent 750+
+</option>
+
+
+<option>
+Good 680-749
+</option>
+
+
+<option>
+Fair 600-679
+</option>
+
+
+<option>
+Needs Improvement Below 600
+</option>
+
+
+</select>
+
+
+</label>
+
+
+
+</div>
+
+
+
+<h3>
+Required Documents
+</h3>
+
+
+<ul class="document-checklist">
+
+
+<li>
+☐ Government ID
+</li>
+
+
+<li>
+☐ Business Formation Documents
+</li>
+
+
+<li>
+☐ EIN Confirmation
+</li>
+
+
+<li>
+☐ Business Bank Statements (3-12 Months)
+</li>
+
+
+<li>
+☐ Personal Bank Statements When Required
+</li>
+
+
+<li>
+☐ Credit Authorization
+</li>
+
+
+<li>
+☐ Tax Returns When Required
+</li>
+
+
+<li>
+☐ Profit & Loss Statement
+</li>
+
+
+<li>
+☐ Balance Sheet
+</li>
+
+
+<li>
+☐ Real Estate Schedule If Applicable
+</li>
+
+
+</ul>
+
+
+
+<button
+class="glow-btn"
+onclick="createBorrowerProfile()">
+
+
+👤 CREATE BORROWER PROFILE
+
+
+</button>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+FUNDING APPLICATION EMBED CENTER
+===================================== -->
+
+
+<section id="applicationCenter"
+class="section">
+
+
+<h2>
+📝 Funding Application Center
+</h2>
+
+
+
+<div class="card">
+
+
+<div class="dropdown-container">
+
+
+<select id="applicationSelector"
+onchange="loadFundingApplication(this.value)">
+
+
+<option value="">
+Choose Application
+</option>
+
+
+<option value="cogo">
+COGO Real Estate Application
+</option>
+
+
+<option value="hardmoney">
+Hard Money / DSCR Application
+</option>
+
+
+<option value="business">
+Business Funding Application
+</option>
+
+
+<option value="credit">
+Credit Optimization
+</option>
+
+
+<option value="rolyfe">
+RO'Lyfe Pre Loan Application
+</option>
+
+
+</select>
+
+
+</div>
+
+
+
+<div id="applicationEmbedBox">
+
+
+<p>
+
+Application preview will load here.
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- =====================================
+THREE TIER OFFER ENGINE PLACEHOLDER
+===================================== -->
+
+
+<section id="threeTierOffers"
+class="section">
+
+
+<h2>
+🤝 RO'Lyfe Three Tier Offer Engine™
+</h2>
+
+
+
+<div class="card">
+
+
+<p>
+
+Structure acquisition offers:
+
+</p>
+
+
+<ul>
+
+
+<li>
+💵 All Cash Offer
+</li>
+
+
+<li>
+🤝 Seller Carry Offer
+</li>
+
+
+<li>
+🏦 Seller Financing Offer
+</li>
+
+
+<li>
+🔄 Refinance / Exit Strategy
+</li>
+
+
+<li>
+📊 Loan Execution Analysis
+</li>
+
+
+</ul>
+
+
+
+<button
+class="glow-btn"
+onclick="openOfferEngine()">
+
+
+🚀 OPEN OFFER STRUCTURING
+
+
+</button>
+
+
+
+<div id="offerExecutionResult"
+class="result-box">
+
+
+Waiting for offer strategy...
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
 
