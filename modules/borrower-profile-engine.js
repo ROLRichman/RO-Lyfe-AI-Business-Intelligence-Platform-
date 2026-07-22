@@ -2914,5 +2914,776 @@ onclick="generateFundingPackage()">
 </section>
 
 
+<!-- =====================================================
+RO'LYFE AI BUSINESS INTELLIGENCE PLATFORM™
+INDEX.HTML PART 1D-1
 
+COMMAND DASHBOARD EXTENSION
+FUNDING INTELLIGENCE CENTER
+JAMAL EXPLAINER FRAMEWORK
+
+Rooted in Access. Built for Growth.
+===================================================== -->
+
+
+<!-- =====================================
+CAPITAL INTELLIGENCE DASHBOARD
+===================================== -->
+
+<section id="capitalDashboard" class="section">
+
+
+<h2>
+🏦 RO'Lyfe Capital Intelligence Dashboard
+</h2>
+
+
+<div class="dashboard-grid">
+
+
+<div class="metric-card">
+
+<h3>
+Active Funding Requests
+</h3>
+
+<h2 id="activeFundingRequests">
+0
+</h2>
+
+</div>
+
+
+
+<div class="metric-card">
+
+<h3>
+Borrower Profiles
+</h3>
+
+<h2 id="borrowerCount">
+0
+</h2>
+
+</div>
+
+
+
+<div class="metric-card">
+
+<h3>
+Investor Matches
+</h3>
+
+<h2 id="investorMatches">
+0
+</h2>
+
+</div>
+
+
+
+<div class="metric-card">
+
+<h3>
+Loan Packages Generated
+</h3>
+
+<h2 id="loanPackages">
+0
+</h2>
+
+</div>
+
+
+
+<div class="metric-card">
+
+<h3>
+Documents Completed
+</h3>
+
+<h2 id="documentsCompleted">
+0
+</h2>
+
+</div>
+
+
+
+<div class="metric-card">
+
+<h3>
+AI Deal Grade
+</h3>
+
+<h2 id="aiDealGrade">
+--
+</h2>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- =====================================
+JAMAL AI EXPLAINER CENTER
+===================================== -->
+
+
+<section id="jamalExplainer" class="section">
+
+
+<h2>
+🧠 Jamal AI Deal & Funding Explainer
+</h2>
+
+
+
+<div class="card">
+
+
+<p>
+
+Jamal explains funding products, calculators, underwriting decisions,
+and borrower requirements.
+
+</p>
+
+
+
+<select id="jamalTopicSelector"
+onchange="jamalExplain(this.value)">
+
+
+<option value="">
+Choose Explanation
+</option>
+
+
+<option value="termloan">
+Term Loan Explained
+</option>
+
+
+<option value="sba">
+SBA Loan Explained
+</option>
+
+
+<option value="mca">
+Merchant Cash Advance Explained
+</option>
+
+
+<option value="linecredit">
+Business Line Of Credit Explained
+</option>
+
+
+<option value="dscr">
+DSCR Real Estate Loan Explained
+</option>
+
+
+<option value="sellerfinance">
+Seller Financing Explained
+</option>
+
+
+<option value="rehab">
+Fix & Flip Funding Explained
+</option>
+
+
+<option value="credit">
+Credit Optimization Explained
+</option>
+
+
+</select>
+
+
+
+<div id="jamalExplanationBox"
+class="result-box">
+
+
+🤖 Select a funding topic and Jamal will explain.
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- =====================================
+BUSINESS FUNDING PRODUCT CENTER
+===================================== -->
+
+
+<section id="businessFunding"
+class="section">
+
+
+<h2>
+💼 Business Funding Intelligence Center
+</h2>
+
+
+
+<div class="card">
+
+
+<p>
+
+Select a funding product. Jamal will explain requirements,
+documents needed, and estimated fit.
+
+</p>
+
+
+
+<div class="button-grid">
+
+
+<button
+onclick="openFundingCalculator('termloan')">
+
+🏦 Term Loan
+
+</button>
+
+
+
+<button
+onclick="openFundingCalculator('sba')">
+
+🏛 SBA Loan
+
+</button>
+
+
+
+<button
+onclick="openFundingCalculator('mca')">
+
+💳 Merchant Cash Advance
+
+</button>
+
+
+
+<button
+onclick="openFundingCalculator('loc')">
+
+💰 Line Of Credit
+
+</button>
+
+
+
+<button
+onclick="openFundingCalculator('workingcapital')">
+
+📈 Working Capital
+
+</button>
+
+
+
+<button
+onclick="openFundingCalculator('startup')">
+
+🚀 Startup Funding
+
+</button>
+
+
+
+<button
+onclick="openFundingCalculator('franchise')">
+
+🏪 Franchise Funding
+
+</button>
+
+
+
+<button
+onclick="openFundingCalculator('equipment')">
+
+⚙ Equipment Financing
+
+</button>
+
+
+</div>
+
+
+
+<div id="fundingCalculatorWorkspace"
+class="card">
+
+
+<h3>
+
+Select A Funding Calculator
+
+</h3>
+
+
+<p>
+
+Calculator results, lender fit,
+estimated payment, and document checklist
+will appear here.
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+BORROWER DOCUMENT READINESS CENTER
+===================================== -->
+
+
+<section id="borrowerDocuments"
+class="section">
+
+
+<h2>
+📂 Borrower Document Readiness Center
+</h2>
+
+
+
+<div class="card">
+
+
+<p>
+
+Jamal prepares borrowers before lender submission.
+
+</p>
+
+
+
+<div class="document-grid">
+
+
+<label>
+
+Business Name
+
+<input
+id="borrowerBusinessName"
+placeholder="Company Name">
+
+</label>
+
+
+
+<label>
+
+Borrower Name
+
+<input
+id="borrowerFullName"
+placeholder="Full Legal Name">
+
+</label>
+
+
+
+<label>
+
+Email
+
+<input
+id="borrowerEmailInput"
+placeholder="Email Address">
+
+</label>
+
+
+
+<label>
+
+Phone
+
+<input
+id="borrowerPhoneInput"
+placeholder="Phone Number">
+
+</label>
+
+
+
+<label>
+
+Years In Business
+
+<select id="yearsBusiness">
+
+
+<option>
+Startup
+</option>
+
+
+<option>
+3-6 Months
+</option>
+
+
+<option>
+6-12 Months
+</option>
+
+
+<option>
+1-3 Years
+</option>
+
+
+<option>
+3+ Years
+</option>
+
+
+</select>
+
+
+</label>
+
+
+
+<label>
+
+Credit Range
+
+<select id="creditRange">
+
+
+<option>
+Excellent 750+
+</option>
+
+
+<option>
+Good 680-749
+</option>
+
+
+<option>
+Fair 600-679
+</option>
+
+
+<option>
+Needs Improvement Below 600
+</option>
+
+
+</select>
+
+
+</label>
+
+
+
+</div>
+
+
+
+<h3>
+Required Documents
+</h3>
+
+
+<ul class="document-checklist">
+
+
+<li>
+☐ Government ID
+</li>
+
+
+<li>
+☐ Business Formation Documents
+</li>
+
+
+<li>
+☐ EIN Confirmation
+</li>
+
+
+<li>
+☐ Business Bank Statements (3-12 Months)
+</li>
+
+
+<li>
+☐ Personal Bank Statements When Required
+</li>
+
+
+<li>
+☐ Credit Authorization
+</li>
+
+
+<li>
+☐ Tax Returns When Required
+</li>
+
+
+<li>
+☐ Profit & Loss Statement
+</li>
+
+
+<li>
+☐ Balance Sheet
+</li>
+
+
+<li>
+☐ Real Estate Schedule If Applicable
+</li>
+
+
+</ul>
+
+
+
+<button
+class="glow-btn"
+onclick="createBorrowerProfile()">
+
+
+👤 CREATE BORROWER PROFILE
+
+
+</button>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================
+FUNDING APPLICATION EMBED CENTER
+===================================== -->
+
+
+<section id="applicationCenter"
+class="section">
+
+
+<h2>
+📝 Funding Application Center
+</h2>
+
+
+
+<div class="card">
+
+
+<div class="dropdown-container">
+
+
+<select id="applicationSelector"
+onchange="loadFundingApplication(this.value)">
+
+
+<option value="">
+Choose Application
+</option>
+
+
+<option value="cogo">
+COGO Real Estate Application
+</option>
+
+
+<option value="hardmoney">
+Hard Money / DSCR Application
+</option>
+
+
+<option value="business">
+Business Funding Application
+</option>
+
+
+<option value="credit">
+Credit Optimization
+</option>
+
+
+<option value="rolyfe">
+RO'Lyfe Pre Loan Application
+</option>
+
+
+</select>
+
+
+</div>
+
+
+
+<div id="applicationEmbedBox">
+
+
+<p>
+
+Application preview will load here.
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- =====================================
+THREE TIER OFFER ENGINE PLACEHOLDER
+===================================== -->
+
+
+<section id="threeTierOffers"
+class="section">
+
+
+<h2>
+🤝 RO'Lyfe Three Tier Offer Engine™
+</h2>
+
+
+
+<div class="card">
+
+
+<p>
+
+Structure acquisition offers:
+
+</p>
+
+
+<ul>
+
+
+<li>
+💵 All Cash Offer
+</li>
+
+
+<li>
+🤝 Seller Carry Offer
+</li>
+
+
+<li>
+🏦 Seller Financing Offer
+</li>
+
+
+<li>
+🔄 Refinance / Exit Strategy
+</li>
+
+
+<li>
+📊 Loan Execution Analysis
+</li>
+
+
+</ul>
+
+
+
+<button
+class="glow-btn"
+onclick="openOfferEngine()">
+
+
+🚀 OPEN OFFER STRUCTURING
+
+
+</button>
+
+
+
+<div id="offerExecutionResult"
+class="result-box">
+
+
+Waiting for offer strategy...
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
 
