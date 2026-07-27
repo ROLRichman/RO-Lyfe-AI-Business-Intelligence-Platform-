@@ -4,12 +4,6 @@ Main Application Controller
 ===================================================== */
 
 
-console.log(
-"🤖 RO'Lyfe AI Platform Online"
-);
-
-
-
 /* =====================================================
 SYSTEM INITIALIZATION
 ===================================================== */
@@ -19,9 +13,8 @@ document.addEventListener(
 "DOMContentLoaded",
 ()=>{
 
-
 console.log(
-"RO'Lyfe Command Center Initialized"
+"🤖 RO'Lyfe Command Center Initialized"
 );
 
 
@@ -31,6 +24,9 @@ initializeDashboard();
 loadModules();
 
 
+loadCalculators();
+
+
 });
 
 
@@ -38,11 +34,12 @@ loadModules();
 
 
 /* =====================================================
-DASHBOARD
+DASHBOARD INITIALIZATION
 ===================================================== */
 
 
 function initializeDashboard(){
+
 
 const jamal =
 document.getElementById(
@@ -55,10 +52,11 @@ if(jamal){
 jamal.innerHTML =
 `
 🧠 Jamal AI Online<br>
-Analyzing Capital • Deals • Funding • Automation
+Capital Intelligence • Deal Analysis • Funding Strategy
 `;
 
 }
+
 
 
 const robot =
@@ -77,6 +75,7 @@ robot.innerHTML =
 }
 
 
+
 }
 
 
@@ -84,7 +83,7 @@ robot.innerHTML =
 
 
 /* =====================================================
-MODULE LOADER
+AI MODULE LOADER
 ===================================================== */
 
 
@@ -92,7 +91,7 @@ function loadModules(){
 
 
 console.log(
-"Loading RO'Lyfe Engines..."
+"Loading RO'Lyfe Intelligence Engines..."
 );
 
 
@@ -121,7 +120,6 @@ const modules = [
 
 "modules/robotics-engine.js"
 
-
 ];
 
 
@@ -131,16 +129,16 @@ modules.forEach(
 (file)=>{
 
 
-let script =
+const script =
 document.createElement(
 "script"
 );
 
 
-script.src=file;
+script.src = file;
 
 
-script.defer=true;
+script.defer = true;
 
 
 document.body.appendChild(
@@ -148,24 +146,26 @@ script
 );
 
 
-}
-
-
-);
+});
 
 
 }
-
 
 
 
 
 /* =====================================================
-CALCULATOR LOADER
+CALCULATOR ENGINE LOADER
 ===================================================== */
 
 
 function loadCalculators(){
+
+
+console.log(
+"Loading RO'Lyfe Calculators..."
+);
+
 
 
 const calculators=[
@@ -185,8 +185,8 @@ const calculators=[
 
 "calculators/deal-score-engine.js"
 
-
 ];
+
 
 
 calculators.forEach(
@@ -194,16 +194,16 @@ calculators.forEach(
 (file)=>{
 
 
-let script =
+const script =
 document.createElement(
 "script"
 );
 
 
-script.src=file;
+script.src = file;
 
 
-script.defer=true;
+script.defer = true;
 
 
 document.body.appendChild(
@@ -214,66 +214,6 @@ script
 });
 
 
-}
+  }
 
 
-
-loadCalculators();
-
-
-
-
-
-
-/* =====================================================
-GLOBAL PLATFORM FUNCTIONS
-===================================================== */
-
-
-function scrollSection(id){
-
-const section =
-document.getElementById(id);
-
-
-if(section){
-
-section.scrollIntoView(
-{
-behavior:"smooth"
-}
-);
-
-}
-
-}
-
-
-
-
-function toggleTheme(){
-
-document.body.classList.toggle(
-"dark-mode"
-);
-
-}
-
-
-
-
-function logoutUser(){
-
-alert(
-"Logged out of RO'Lyfe Command Center"
-);
-
-}
-
-
-
-
-
-console.log(
-"🚀 RO'Lyfe System Ready"
-);
