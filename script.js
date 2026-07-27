@@ -217,3 +217,261 @@ script
   }
 
 
+
+
+/* =====================================================
+CORE PLATFORM FUNCTIONS
+===================================================== */
+
+
+/* =====================================================
+SECTION NAVIGATION
+===================================================== */
+
+
+function scrollSection(id){
+
+const section =
+document.getElementById(id);
+
+
+if(section){
+
+section.scrollIntoView(
+{
+behavior:"smooth",
+block:"start"
+}
+);
+
+}
+
+}
+
+
+
+
+
+/* =====================================================
+THEME CONTROL
+===================================================== */
+
+
+function toggleTheme(){
+
+document.body.classList.toggle(
+"dark-mode"
+);
+
+
+console.log(
+"Theme changed"
+);
+
+}
+
+
+
+
+
+/* =====================================================
+LOGIN SYSTEM
+===================================================== */
+
+
+function loginUser(){
+
+const email =
+document.getElementById(
+"loginEmail"
+)?.value;
+
+
+const password =
+document.getElementById(
+"loginPassword"
+)?.value;
+
+
+
+if(email && password){
+
+
+document.getElementById(
+"loginScreen"
+)?.classList.add(
+"hidden"
+);
+
+
+
+document.getElementById(
+"app"
+)?.classList.remove(
+"hidden"
+);
+
+
+
+console.log(
+"🔐 User logged into RO'Lyfe Command Center"
+);
+
+
+
+}
+
+else{
+
+
+alert(
+"Please enter email and password"
+);
+
+
+}
+
+
+}
+
+
+
+
+
+/* =====================================================
+LOGOUT SYSTEM
+===================================================== */
+
+
+function logoutUser(){
+
+
+document.getElementById(
+"app"
+)?.classList.add(
+"hidden"
+);
+
+
+
+document.getElementById(
+"loginScreen"
+)?.classList.remove(
+"hidden"
+);
+
+
+
+console.log(
+"User logged out"
+);
+
+
+}
+
+
+
+
+
+/* =====================================================
+QUICK ACTION COMMANDS
+===================================================== */
+
+
+function openDealIntake(){
+
+scrollSection(
+"dealIntake"
+);
+
+}
+
+
+
+function openBorrowerProfile(){
+
+scrollSection(
+"borrower"
+);
+
+}
+
+
+
+function openFundingCenter(){
+
+scrollSection(
+"fundingCommandCenter"
+);
+
+}
+
+
+
+function openOfferEngine(){
+
+scrollSection(
+"offers"
+);
+
+}
+
+
+
+function openDocuments(){
+
+scrollSection(
+"documents"
+);
+
+}
+
+
+
+function openJamal(){
+
+const jamal =
+document.getElementById(
+"jamalAssistant"
+);
+
+
+if(jamal){
+
+jamal.classList.remove(
+"hidden"
+);
+
+}
+
+}
+
+
+
+
+
+function closeJamal(){
+
+const jamal =
+document.getElementById(
+"jamalAssistant"
+);
+
+
+if(jamal){
+
+jamal.classList.add(
+"hidden"
+);
+
+}
+
+}
+
+
+
+
+
+console.log(
+"🚀 RO'Lyfe Core Functions Loaded"
+);
