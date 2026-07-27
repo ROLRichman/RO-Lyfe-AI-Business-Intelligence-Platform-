@@ -2341,3 +2341,547 @@ Open
 
 </section>
 
+
+
+
+
+
+
+<!-- =====================================================
+RO'LYFE FUNDING COMMAND CENTER
+===================================================== -->
+
+<section id="fundingCommandCenter" class="section">
+
+
+<h2>
+🏦 RO'Lyfe Funding Command Center™
+</h2>
+
+
+<div class="card">
+
+
+<p>
+
+Unified capital intelligence system for business funding, real estate financing, borrower analysis, lender matching, and Jamal AI recommendations.
+
+</p>
+
+
+
+
+<!-- =========================
+FUNDING PRODUCT SELECTOR
+========================= -->
+
+
+<h3>
+💰 Select Funding Strategy
+</h3>
+
+
+<select 
+id="fundingProductSelector"
+onchange="analyzeFundingProduct()">
+
+
+<option value="">
+Choose Funding Product
+</option>
+
+
+<option value="fixflip">
+🏚 Fix & Flip Funding
+</option>
+
+
+<option value="brrrr">
+🔄 BRRRR Financing
+</option>
+
+
+<option value="dscr">
+🏠 DSCR Rental Loan
+</option>
+
+
+<option value="hardmoney">
+💰 Hard Money Loan
+</option>
+
+
+<option value="bridge">
+🌉 Bridge Financing
+</option>
+
+
+<option value="commercial">
+🏢 Commercial Real Estate
+</option>
+
+
+<option value="construction">
+🏗 Construction Loan
+</option>
+
+
+<option value="businessloan">
+🏦 Business Term Loan
+</option>
+
+
+<option value="loc">
+💳 Business Line of Credit
+</option>
+
+
+<option value="sba">
+🏛 SBA Financing
+</option>
+
+
+<option value="startup">
+🚀 Startup Capital
+</option>
+
+
+<option value="equipment">
+⚙ Equipment Financing
+</option>
+
+
+<option value="invoice">
+🧾 Invoice Factoring
+</option>
+
+
+<option value="revenue">
+📊 Revenue Based Financing
+</option>
+
+
+<option value="franchise">
+🏪 Franchise Financing
+</option>
+
+
+<option value="credit">
+📈 Credit Optimization
+</option>
+
+
+</select>
+
+
+
+
+<div 
+id="fundingProductAnalysis"
+class="result-box">
+
+
+🧠 Select a funding strategy.
+
+Jamal will analyze:
+
+<br><br>
+
+✅ Best borrower profile
+
+<br>
+✅ Qualification requirements
+
+<br>
+✅ Required documents
+
+<br>
+✅ Funding timeline
+
+<br>
+✅ Potential lender fit
+
+<br>
+✅ Risks and considerations
+
+
+</div>
+
+
+
+
+
+
+
+<hr>
+
+
+
+
+<!-- =========================
+BORROWER INTELLIGENCE
+========================= -->
+
+
+<h3>
+👤 Borrower Intelligence Profile
+</h3>
+
+
+
+<div class="input-grid">
+
+
+<input
+id="fundingBusinessName"
+placeholder="Business Name">
+
+
+<input
+id="fundingOwnerName"
+placeholder="Owner Name">
+
+
+<input
+id="fundingAmount"
+placeholder="Funding Amount Requested">
+
+
+<input
+id="fundingRevenue"
+placeholder="Annual Revenue">
+
+
+<input
+id="fundingYears"
+placeholder="Years In Business">
+
+
+<input
+id="fundingCredit"
+placeholder="Estimated Credit Score">
+
+
+</div>
+
+
+
+
+
+<button
+class="glow-btn"
+onclick="runFundingAnalysis()">
+
+
+🤖 RUN JAMAL FUNDING ANALYSIS
+
+
+</button>
+
+
+
+
+
+<div
+id="fundingAnalysisResult"
+class="result-box">
+
+
+Waiting for borrower analysis...
+
+
+</div>
+
+
+
+
+
+
+<hr>
+
+
+
+
+
+<!-- =========================
+CAPITAL MATCHING ENGINE
+========================= -->
+
+
+<h3>
+🤝 Capital Matching Engine
+</h3>
+
+
+
+<div class="button-grid">
+
+
+<button onclick="matchCapital('bank')">
+
+🏦 Bank Capital
+
+</button>
+
+
+
+<button onclick="matchCapital('private')">
+
+💼 Private Money
+
+</button>
+
+
+
+<button onclick="matchCapital('hardmoney')">
+
+💰 Hard Money
+
+</button>
+
+
+
+<button onclick="matchCapital('investor')">
+
+📈 Investor Capital
+
+</button>
+
+
+
+<button onclick="matchCapital('sba')">
+
+🏛 SBA Partners
+
+</button>
+
+
+
+<button onclick="matchCapital('alternative')">
+
+⚡ Alternative Funding
+
+</button>
+
+
+</div>
+
+
+
+
+
+<div
+id="capitalMatchResult"
+class="result-box">
+
+
+Capital matching results will appear here.
+
+
+</div>
+
+
+
+
+
+
+
+<hr>
+
+
+
+
+
+<!-- =========================
+DOCUMENT READINESS
+========================= -->
+
+
+<h3>
+📂 Funding Readiness Checklist
+</h3>
+
+
+
+<div class="check-grid">
+
+
+<label>
+<input type="checkbox">
+Government ID
+</label>
+
+
+
+<label>
+<input type="checkbox">
+Business Formation Documents
+</label>
+
+
+
+<label>
+<input type="checkbox">
+EIN Letter
+</label>
+
+
+
+<label>
+<input type="checkbox">
+Business Bank Statements
+</label>
+
+
+
+<label>
+<input type="checkbox">
+Tax Returns
+</label>
+
+
+
+<label>
+<input type="checkbox">
+Profit & Loss Statement
+</label>
+
+
+
+<label>
+<input type="checkbox">
+Balance Sheet
+</label>
+
+
+
+<label>
+<input type="checkbox">
+Debt Schedule
+</label>
+
+
+
+<label>
+<input type="checkbox">
+Property Documents
+</label>
+
+
+
+<label>
+<input type="checkbox">
+Credit Authorization
+</label>
+
+
+
+</div>
+
+
+
+
+
+
+
+<hr>
+
+
+
+
+
+
+<!-- =========================
+FUNDING PACKAGE BUILDER
+========================= -->
+
+
+<h3>
+📦 Funding Package Builder
+</h3>
+
+
+
+<div class="button-grid">
+
+
+<button onclick="generateFundingPackage()">
+
+📄 Generate Package
+
+</button>
+
+
+
+<button onclick="downloadFundingPackage()">
+
+⬇ Download Package
+
+</button>
+
+
+
+<button onclick="emailFundingPackage()">
+
+📧 Send Package
+
+</button>
+
+
+
+<button onclick="exportFundingPackage()">
+
+📤 Export Data
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<hr>
+
+
+
+
+
+
+<!-- =========================
+JAMAL CAPITAL ADVISOR
+========================= -->
+
+
+<h3>
+🧠 Jamal Capital Advisor
+</h3>
+
+
+
+<div
+id="jamalFundingAdvisor"
+class="result-box">
+
+
+Jamal is ready.
+
+Submit borrower information and funding strategy for recommendations.
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+  
