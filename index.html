@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+RO'Lyfe AI Business Intelligence Platform™
+</title>
+
+<meta name="description"
+content="RO'Lyfe AI Business Intelligence Platform™ - Enterprise Intelligence Operating System for Capital, Real Estate, Automation and Robotics">
+
+<meta name="theme-color" content="#111827">
+
+
+<!-- MAIN UI -->
+
+<link rel="stylesheet" href="styles.css">
+
+
+<!-- ROBOTICS UI -->
+
+<link rel="stylesheet" href="robotics/robotics.css">
+
+
+<!-- ICONS -->
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+</head>
+
+
+<body>
+
+
+
+<!-- =====================================================
+SYSTEM LOADING
+===================================================== -->
+
+
+<div id="loadingScreen">
+
+
+<div class="loading-card">
+
+
+<img src="assets/rolyfe-logo.png"
+class="loading-logo">
+
+
+<h1>
+🤖 RO'Lyfe AI Initializing
+</h1>
+
+
+<p>
+Capital Intelligence • Deal Intelligence • Robotics • Automation
+</p>
+
+
+<div class="loader"></div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<!-- =====================================================
+LOGIN COMMAND CENTER
+===================================================== -->
+
+
+<section id="loginScreen"
+class="login-screen">
+
+
+<div class="login-card">
+
+
+<img src="assets/rolyfe-logo.png"
+class="login-logo">
+
+
+<h1>
+RO'Lyfe Command Center
+</h1>
+
+
+<p>
+Enterprise Intelligence Operating System
+</p>
+
+
+
+<input
+id="loginEmail"
+type="email"
+placeholder="Email Address">
+
+
+
+<input
+id="loginPassword"
+type="password"
+placeholder="Password">
+
+
+
+<button
+class="primary-btn"
+onclick="loginUser()">
+
+🔐 Enter Command Center
+
+</button>
+
+
+
+<footer>
+
+Root Of Lyfe Holdings LLC™
+
+<br>
+
+Rooted in Access. Built for Growth.
+
+</footer>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================================
+MAIN APPLICATION
+===================================================== -->
+
+
+<div id="app"
+class="hidden">
+
+
+
+
+
+
+<!-- =====================================================
+TOP COMMAND HEADER
+===================================================== -->
+
+
+<header class="top-header">
+
+
+<div class="brand">
+
+
+<img src="assets/rolyfe-logo.png">
+
+
+<div>
+
+<h1>
+🤖 RO'Lyfe AI Business Intelligence Platform™
+</h1>
+
+
+<p>
+Version 6.0 • Enterprise Command System
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="system-status">
+
+
+<span>
+🟢 AI ONLINE
+</span>
+
+
+<span>
+🏦 CAPITAL READY
+</span>
+
+
+<span>
+🤖 ROBOTICS READY
+</span>
+
+
+<button onclick="toggleTheme()">
+
+🌙
+
+</button>
+
+
+<button onclick="logoutUser()">
+
+Logout
+
+</button>
+
+
+</div>
+
+
+</header>
+
+
+
+
+
+
+
+<!-- =====================================================
+COMMAND NAVIGATION
+===================================================== -->
+
+
+<nav class="command-nav">
+
+
+<button onclick="loadModule('dashboard')">
+📊 Dashboard
+</button>
+
+
+<button onclick="loadModule('jamal')">
+🧠 Jamal AI
+</button>
+
+
+<button onclick="loadModule('deals')">
+🏠 Deal Intelligence
+</button>
+
+
+<button onclick="loadModule('funding')">
+🏦 Capital Center
+</button>
+
+
+<button onclick="loadModule('documents')">
+📄 Documents
+</button>
+
+
+<button onclick="loadModule('robotics')">
+🤖 Robotics
+</button>
+
+
+<button onclick="loadModule('automation')">
+⚙️ Automation
+</button>
+
+
+</nav>
+
+
+
+
+
+
+
+
+<!-- =====================================================
+MAIN COMMAND CENTER
+===================================================== -->
+
+
+<main class="command-center">
+
+
+
+
+
+<!-- =====================================================
+DASHBOARD MODULE
+===================================================== -->
+
+
+<section id="dashboard"
+class="module">
+
+
+<h2>
+📊 RO'Lyfe Intelligence Dashboard
+</h2>
+
+
+
+<div class="dashboard-grid">
+
+
+<div class="metric-card">
+
+<h3>
+Active Deals
+</h3>
+
+<strong id="activeDeals">
+0
+</strong>
+
+</div>
+
+
+
+<div class="metric-card">
+
+<h3>
+Funding Pipeline
+</h3>
+
+<strong id="fundingPipeline">
+$0
+</strong>
+
+</div>
+
+
+
+
+<div class="metric-card">
+
+<h3>
+Borrowers
+</h3>
+
+<strong id="borrowerCount">
+0
+</strong>
+
+</div>
+
+
+
+
+<div class="metric-card">
+
+<h3>
+AI Score
+</h3>
+
+<strong id="aiScore">
+--
+</strong>
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="system-panel">
+
+
+<h3>
+🧠 Jamal System Status
+</h3>
+
+
+<div id="jamalStatus">
+
+Jamal AI awaiting connection...
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="system-panel">
+
+
+<h3>
+🤖 Robotics Intelligence Status
+</h3>
+
+
+<div id="robotStatus">
+
+Robotics systems awaiting connection...
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================================
+JAMAL AI BRAIN MOUNT
+===================================================== -->
+
+
+<section id="jamal"
+class="module hidden">
+
+
+<h2>
+🧠 Jamal AI Intelligence Center™
+</h2>
+
+
+<div id="jamalModule">
+
+
+<p>
+Jamal Brain module loading...
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- =====================================================
+DEAL INTELLIGENCE MOUNT
+===================================================== -->
+
+
+<section id="deals"
+class="module hidden">
+
+
+<h2>
+🏠 Deal Intelligence Engine
+</h2>
+
+
+<div id="dealModule">
+
+
+<p>
+Deal engine loading...
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- =====================================================
+CAPITAL CENTER MOUNT
+===================================================== -->
+
+
+<section id="funding"
+class="module hidden">
+
+
+<h2>
+🏦 Capital Intelligence Center
+</h2>
+
+
+<div id="fundingModule">
+
+
+<p>
+Capital engine loading...
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- =====================================================
+DOCUMENT CENTER
+===================================================== -->
+
+
+<section id="documents"
+class="module hidden">
+
+
+<h2>
+📄 Document Command Center
+</h2>
+
+
+<div id="documentModule">
+
+
+<p>
+Document engine loading...
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =====================================================
+ROBOTICS HUB
+===================================================== -->
+
+
+<section id="robotics"
+class="module hidden">
+
+
+<h2>
+🤖 Robotics Intelligence Hub
+</h2>
+
+
+
+<div id="roboticsModule">
+
+
+<p>
+Robotics intelligence loading...
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- =====================================================
+AUTOMATION CENTER
+===================================================== -->
+
+
+<section id="automation"
+class="module hidden">
+
+
+<h2>
+⚙️ Automation Engine
+</h2>
+
+
+<div id="automationModule">
+
+
+<p>
+Automation engine loading...
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+</main>
+
+
+
+
+
+
+
+<!-- =====================================================
+JAMAL FLOATING ASSISTANT
+===================================================== -->
+
+
+<div id="jamalAssistant"
+class="jamal-popup">
+
+
+<div class="jamal-header">
+
+<h3>
+🧠 Jamal AI
+</h3>
+
+
+<button onclick="closeJamal()">
+X
+</button>
+
+
+</div>
+
+
+
+<textarea
+id="jamalQuestion"
+placeholder="Ask Jamal about deals, funding, strategy, robotics...">
+</textarea>
+
+
+
+<button
+onclick="askJamal()">
+
+🤖 Analyze
+
+</button>
+
+
+
+<div id="jamalResponse">
+
+Ready...
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- =====================================================
+SYSTEM FILES
+===================================================== -->
+
+
+<script src="script.js"></script>
+
+
+
+<!-- CORE ENGINES -->
+
+
+<script src="engines/capital-engine.js"></script>
+
+<script src="engines/document-engine.js"></script>
+
+<script src="engines/email-engine.js"></script>
+
+<script src="engines/investor-engine.js"></script>
+
+<script src="engines/report-engine.js"></script>
+
+
+
+
+<!-- CALCULATORS -->
+
+
+<script src="calculators/creative-offer-calculator.js"></script>
+
+<script src="calculators/deal-score-engine.js"></script>
+
+<script src="calculators/rehab-arv-calculator.js"></script>
+
+<script src="calculators/ltv-calculator.js"></script>
+
+
+
+
+
+<!-- ROBOTICS -->
+
+
+<script src="robotics/robotics-config.js"></script>
+
+<script src="robotics/unitree-connector.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>
