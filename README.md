@@ -69,3 +69,15 @@ Deliverables
 • Shared CRM
 • Shared Marketplace
 • Enterprise Analytics
+
+## 📚 Documentation
+
+Detailed architecture and development guides:
+
+- System Architecture
+- Module Standards
+- API Reference
+- AI Agent Documentation
+- Robotics Architecture
+- Calculator Standards
+- Project Structure
