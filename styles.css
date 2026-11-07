@@ -746,3 +746,30 @@ MOBILE OPTIMIZATION
 
 
   }
+
+
+/* Responsive header and navigation for the actual v6 HTML class names.
+   The legacy .mobile-menu rules above remain intact for older embedded views. */
+.brand-section{display:flex;align-items:center;gap:14px;min-width:0;flex:1}
+.brand-logo{display:block;width:clamp(44px,6vw,68px);height:auto;max-width:100%;object-fit:contain;flex:0 0 auto}
+.brand-text{min-width:0}
+.brand-text h1{font-size:clamp(18px,2.3vw,28px);line-height:1.2;overflow-wrap:anywhere}
+.brand-text p{font-size:13px;line-height:1.4;color:#cbd5e1}
+.header-controls{display:flex;align-items:center;justify-content:flex-end;gap:8px;flex-wrap:wrap;min-width:0}
+.status-pill{display:inline-flex;align-items:center;justify-content:center;min-height:36px;padding:7px 10px;border:1px solid rgba(255,255,255,.14);border-radius:999px;background:rgba(255,255,255,.055);font-size:11px;line-height:1.25;white-space:normal}
+.command-navigation{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,170px),1fr));gap:9px;padding:14px 18px;background:#080d18}
+.command-navigation button{width:100%;min-width:0;min-height:44px;margin:0;padding:11px 12px;line-height:1.3;white-space:normal;overflow-wrap:anywhere}
+@media(max-width:768px){
+  .top-header{align-items:stretch}
+  .brand-section{width:100%}
+  .header-controls{width:100%;justify-content:flex-start}
+  .command-navigation{grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr));padding:12px}
+}
+@media(max-width:420px){
+  .brand-section{gap:10px}
+  .brand-logo{width:46px}
+  .brand-text h1{font-size:18px}
+  .header-controls{gap:6px}
+  .status-pill{font-size:10px;padding:6px 8px}
+  .command-navigation{grid-template-columns:1fr;padding:10px}
+}
